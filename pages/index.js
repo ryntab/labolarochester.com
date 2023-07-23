@@ -3,13 +3,13 @@ import React, { useEffect } from 'react';
 export default function Home() {
   return (
     <>
-    <div className="h-screen">
+    <div className="bg-slate-100/50">
         <div className="w-full bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-32 sm:pt-16 md:pt-24" style={{ backgroundImage: `url(/labola.jpg)` }}>
             <div className="h-64 sm:h-0">
 
             </div>
             <div className="ml-auto w-full sm:w-1/3 bg-black/5 backdrop-blur-sm border-slate-500">
-                <div className="bg-gradient-to-r from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white z-10">
+                <div className="bg-gradient-to-r from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white">
                     Light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester.
                 </div>
                 <div className="bg-gradient-to-l from-slate-900/100 font-semibold p-4 background-blur mb-4 text-right text-white">
@@ -27,7 +27,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="w-full text-white flex backdrop-blur overflow-hidden h-1/6 p-0 bg-white py-2 space-x-2">
+        <div className="w-full text-white flex backdrop-blur h-1/6 p-0 bg-white py-2 space-x-2">
             <img className="w-1/3 object-cover" src="/pic1.jpg" alt="Image 1" />
             <img className="w-1/3 object-cover" src="/pic2.jpg" alt="Image 2" />
             <img className="w-1/3 object-cover" src="/pic3.jpg" alt="Image 3" />
@@ -40,7 +40,7 @@ export default function Home() {
                 <h1 className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Wine </h1>
                 <h1 className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Beer </h1>
             </div>
-            <div className="text-white bg-white/75 text-slate-900 lg:flex p-4 pt-16">
+            <div className="text-slate-900 bg-white/75 text-slate-800 lg:flex p-4 pt-16">
                 <div className="lg:w-1/3 font-serif text-center">
                     <h1 className="text-2xl mb-8 font-semibold"> TAPAS </h1>
                     <h2 className="font-semibold"> CHARCUTERIE <b className="ml-2 font-bold">20/35</b></h2>

@@ -9,7 +9,7 @@ export default function Document() {
             <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
             <title>Fixed Background Image with Tailwind CSS</title>
         </Head>
-        <body className="bg-black">
+        <body className="bg-cover backdrop-blur bg-no-repeat" style={{backgroundImage: `url(/tile.jpg)` }}>
             <Main />
             <NextScript />
         </body>

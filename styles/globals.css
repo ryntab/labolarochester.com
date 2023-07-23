@@ -25,3 +25,25 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Change the alpha (last value) to control darkness */
   }
+
+  .dropdown-enter {
+    opacity: 0;
+    max-height: 0;
+  }
+  
+  .dropdown-enter-active {
+    opacity: 1;
+    max-height: 20rem; /* Set the desired max height of the dropdown when it's open */
+    transition: opacity 300ms, max-height 300ms ease-out;
+  }
+  
+  .dropdown-exit {
+    opacity: 1;
+    max-height: 20rem; /* Set the same max height as dropdown-enter-active to avoid flickering */
+  }
+  
+  .dropdown-exit-active {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 300ms, max-height 300ms ease-in;
+  }
