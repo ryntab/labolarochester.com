@@ -1,9 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
+import Menu from '@/components/menu';
 
 export default function Home() {
+    const [section, setSection] = React.useState("menu");
+    
   return (
     <>
-    <div className="bg-slate-100/50">
+    <div className="bg-slate-100/50 overflow-hidden">
         <div className="w-full bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-32 sm:pt-16 md:pt-24" style={{ backgroundImage: `url(/labola.jpg)` }}>
             <div className="h-64 sm:h-0">
 
@@ -33,66 +37,14 @@ export default function Home() {
             <img className="w-1/3 object-cover" src="/pic3.jpg" alt="Image 3" />
         </div>
         <div className="w-full">
-            <div className="bg-black/90 text-center text-white p-0 font-serif text-1xl mx-auto uppercase flex-wrap sm:flex">
-                <h1 className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Specials</h1>
-                <h1 className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 bg-white/75 text-black"> Menu</h1>
-                <h1 className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Cocktails</h1>
-                <h1 className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Wine </h1>
-                <h1 className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Beer </h1>
+            <div className="bg-black/90 text-center text-white p-0 font-serif text-1xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
+                <h1 onClick={() => setSection("specials")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Specials</h1>
+                <h1 onClick={() => setSection("menu")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 bg-white/75 text-black"> Menu</h1>
+                <h1 onClick={() => setSection("cocktails")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Cocktails</h1>
+                <h1 onClick={() => setSection("wine")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Wine </h1>
+                <h1 onClick={() => setSection("beer")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Beer </h1>
             </div>
-            <div className="text-slate-900 bg-white/75 text-slate-800 lg:flex p-4 pt-16">
-                <div className="lg:w-1/3 font-serif text-center">
-                    <h1 className="text-2xl mb-8 font-semibold"> TAPAS </h1>
-                    <h2 className="font-semibold"> CHARCUTERIE <b className="ml-2 font-bold">20/35</b></h2>
-                    <p className="mb-4"> Rotating Cheeses & Cured Meats, Quince Paste, Marcona Almonds, Olives, Spicy Mustard, House-Made Breads </p>
-                    <h2 className="font-semibold"> HTIPITI <b className="ml-2 font-bold">11</b></h2>
-                    <p className="mb-4"> Roasted Red Pepper & Feta Dip, Olives, House-Made Pita </p>
-                    <h2 className="font-semibold"> WARM BREAD <b className="ml-2 font-bold">7</b></h2>
-                    <p className="mb-4"> Gus's Daily Bread Selection, Tomato Spread, Salt </p>
-                    <h2 className="font-semibold uppercase"> Ricotta Toast <b className="ml-2 font-bold">10</b></h2>
-                    <p className="mb-4"> Local Honey, Spanish Olive Oil, Sea Salt, Herbs </p>
-                    <h2 className="font-semibold uppercase"> Potatas Bravas <b className="ml-2 font-bold">9</b></h2>
-                    <p className="mb-4"> Smashed Fingerling Potatoes, Garlic, Lemon Aioli, Bravas Sauce </p>
-                    <h2 className="font-semibold uppercase"> Harissa Roasted Heirloom Carrots <b className="ml-2 font-bold">11</b></h2>
-                    <p className="mb-4"> Roasted Red Pepper & Feta Dip, Olives, House-Made Pita </p>
-                    <h2 className="font-semibold uppercase"> Imported Conservas <b className="ml-2 font-bold lowercase">Mkt. / tin</b></h2>
-                    <p className="mb-4"> Cockles, Octopus, Razor Clams or Scallops </p>
-                </div>
-                <div className="lg:w-1/3 font-serif text-center mt-16 lg:mt-0 px-4">
-                    <h1 className=" text-2xl mb-8 font-semibold"> HOT PRESSED SANDWICHES</h1>
-                    <h2 className="font-semibold"> CHARCUTERIE <b className="ml-2 font-bold">20/35</b></h2>
-                    <p className="mb-4"> Rotating Cheeses & Cured Meats, Quince Paste, Marcona Almonds, Olives, Spicy Mustard, House-Made Breads </p>
-                    <h2 className="font-semibold"> HTIPITI <b className="ml-2 font-bold">11</b></h2>
-                    <p className="mb-4"> Roasted Red Pepper & Feta Dip, Olives, House-Made Pita </p>
-                    <h2 className="font-semibold"> WARM BREAD <b className="ml-2 font-bold">7</b></h2>
-                    <p className="mb-4"> Gus's Daily Bread Selection, Tomato Spread, Salt </p>
-                    <h2 className="font-semibold uppercase"> Ricotta Toast <b className="ml-2 font-bold">10</b></h2>
-                    <p className="mb-4"> Local Honey, Spanish Olive Oil, Sea Salt, Herbs </p>
-                    <h2 className="font-semibold uppercase"> Potatas Bravas <b className="ml-2 font-bold">9</b></h2>
-                    <p className="mb-4"> Smashed Fingerling Potatoes, Garlic, Lemon Aioli, Bravas Sauce </p>
-                    <h2 className="font-semibold uppercase"> Harissa Roasted Heirloom Carrots <b className="ml-2 font-bold">11</b></h2>
-                    <p className="mb-4"> Roasted Red Pepper & Feta Dip, Olives, House-Made Pita </p>
-                    <h2 className="font-semibold uppercase"> Imported Conservas <b className="ml-2 font-bold lowercase">Mkt. / tin</b></h2>
-                    <p className="mb-4"> Cockles, Octopus, Razor Clams or Scallops </p>
-                </div>
-                <div className="lg:w-1/3 mt-16 lg:mt-0 font-serif text-center">
-                    <h1 className=" text-2xl mb-8 font-semibold"> MORE </h1>
-                    <h2 className="font-semibold"> CHARCUTERIE <b className="ml-2 font-bold">20/35</b></h2>
-                    <p className="mb-4"> Rotating Cheeses & Cured Meats, Quince Paste, Marcona Almonds, Olives, Spicy Mustard, House-Made Breads </p>
-                    <h2 className="font-semibold"> HTIPITI <b className="ml-2 font-bold">11</b></h2>
-                    <p className="mb-4"> Roasted Red Pepper & Feta Dip, Olives, House-Made Pita </p>
-                    <h2 className="font-semibold"> WARM BREAD <b className="ml-2 font-bold">7</b></h2>
-                    <p className="mb-4"> Gus's Daily Bread Selection, Tomato Spread, Salt </p>
-                    <h2 className="font-semibold uppercase"> Ricotta Toast <b className="ml-2 font-bold">10</b></h2>
-                    <p className="mb-4"> Local Honey, Spanish Olive Oil, Sea Salt, Herbs </p>
-                    <h2 className="font-semibold uppercase"> Potatas Bravas <b className="ml-2 font-bold">9</b></h2>
-                    <p className="mb-4"> Smashed Fingerling Potatoes, Garlic, Lemon Aioli, Bravas Sauce </p>
-                    <h2 className="font-semibold uppercase"> Harissa Roasted Heirloom Carrots <b className="ml-2 font-bold">11</b></h2>
-                    <p className="mb-4"> Roasted Red Pepper & Feta Dip, Olives, House-Made Pita </p>
-                    <h2 className="font-semibold uppercase"> Imported Conservas <b className="ml-2 font-bold lowercase">Mkt. / tin</b></h2>
-                    <p className="mb-4"> Cockles, Octopus, Razor Clams or Scallops </p>
-                </div>
-            </div>
+            <Menu tab={section}/>
         </div>
     </div>
     </>

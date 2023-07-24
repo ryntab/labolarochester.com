@@ -9,7 +9,7 @@ export default function Document() {
             <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
             <title>Fixed Background Image with Tailwind CSS</title>
         </Head>
-        <body className="bg-gradient-to-b from-[#074041] to-black/50">
+        <body className="sm:bg-gradient-to-b from-[#074041] h-screen">
             <Main />
             <NextScript />
         </body>
