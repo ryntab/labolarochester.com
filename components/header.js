@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="backdrop-blur border-b-2 border-slate-500 max-w-7xl w-full bg-black/75 h-16 md:h-24 flex shadow-2xl shadow-black overflow-visible fixed z-50 justify-content-between">
+      <div className="backdrop-blur border-b-2 border-slate-500 w-full bg-black/50 h-16 md:h-24 flex shadow-2xl shadow-black overflow-visible fixed z-50 justify-content-between">
         <div className="w-1/5 sm:w-2/5 bg-gradient-to-r from-slate-900 flex items-center">
         <button className="text-white text-xl font-semibold pl-8 visible md:invisible w-auto sm:w-0" onClick={toggleMenu}>
             {isMenuOpen ? (
@@ -30,20 +30,21 @@ export default function Header() {
         <div className="w-32 min-w-32 md:h-48 h-32 border-2 mx-auto md:w-48 backdrop-blur -mt-2 bg-black/100 border-slate-500 /75 rounded-b-full shadow-2xl shadow-black ">
             <img src="/logo.png" className="object-cover md:mt-8 mt-4 w-20 md:w-32 relative mx-auto overflow-visible"></img>
         </div>
-        <div className="bg-gradient-to-r from-black/0 to-black/100 flex items-center w-1/5 sm:w-2/5">
-        <div className={`w-full font-semibold text-slate-100 text-center pl-4 invisible md:visible`}>
-            <a className="px-2">Home</a>
-            <a className="px-2">About</a>
-            <a className="px-2">Contact</a>
-            <a className="px-2">Menu</a>
-        </div>
+        <div className="flex items-center w-1/5 sm:w-2/5 bg-gradient-to-r from-black/0 to-black">
+          <div className={`space-x-4 w-full font-semibold text-slate-100 text-left pl-4 invisible md:visible`}>
+              <a href="/" className="hover:border-b-2 py-1">Home</a>
+              <a href="#about" className="hover:border-b-2 py-1">About</a>
+              <a href="#contact" className="hover:border-b-2 py-1">Contact</a>
+              <a href="#menu" className="hover:border-b-2 py-1">Menu</a>
+              <a href="#events" className="hover:border-b-2 py-1">Events</a>
+          </div>
         </div>
     </div>
-    <div className={`fixed w-0 h-0 pl-8 space-y-8 py-8 z-40 w-full bg-black/75 font-semibold text-slate-100 text-left ${isMenuOpen ? 'visible h-auto pt-24 dropdown-enter dropdown-enter-active' : 'invisible dropdown-exit dropdown-exit-active'} md:invisible`}>
-        <a className="block">Home</a>
+    <div className={`fixed w-0 h-0 pl-8 space-y-8 py-8 z-40 w-full bg-black/75 font-semibold text-slate-100 text-left ${isMenuOpen ? 'pt-24 visible h-auto dropdown-enter dropdown-enter-active' : 'invisible dropdown-exit dropdown-exit-active'} md:invisible`}>
         <a className="block">About</a>
         <a className="block">Contact</a>
         <a className="block">Menu</a>
+        <a className="block">Events</a>
     </div>
     </>
   );

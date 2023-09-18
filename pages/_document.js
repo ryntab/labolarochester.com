@@ -9,8 +9,9 @@ export default function Document() {
             <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
             <title>Fixed Background Image with Tailwind CSS</title>
         </Head>
-        <body className="sm:bg-gradient-to-b from-[#074041] h-screen">
-            <Main />
+        <body className="relative bg-[url(/bg2.jpg)] backdrop-filter bg-fixed bg-cover">
+          <div class="absolute inset-0 opacity-100 z-[-1] bg-fixed bg-gradient-to-t from-slate-900"></div>
+            <Main/>
             <NextScript />
         </body>
     </Html>
