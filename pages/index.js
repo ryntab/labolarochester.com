@@ -50,7 +50,7 @@ export default function Home() {
             <div className="lg:w-3/4 p-6">
                 <h1 className="font-bold text-2xl text-white font-serif"> Discover La Bola</h1>
                 <p className="text-white mt-4">
-                    Your Mediterranean Culinary Haven in Downtown Rochester. We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. Can't wait to share our love for food with you!
+                    Your Mediterranean Culinary Haven in Downtown Rochester. We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. Can&apos;t wait to share our love for food with you!
                 </p>
                 <div className="md:flex text-white font-serif">
                     <div className="md:w-1/2 border-r-2 md:border-white border-none mt-10">
@@ -82,7 +82,7 @@ export default function Home() {
             <div className="md:w-1/2 p-6">
             <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola: <br/> Your Vision, Our Venue</h1>
                 <p className="mt-4">
-                Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it's a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
+                Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
                 <button className="bg-[#074041] font-semibold text-slate-100 mx-auto py-4 border-2 border-slate-100/25 inline-block px-2 mt-4 rounded">Book Now</button>
             </div>
