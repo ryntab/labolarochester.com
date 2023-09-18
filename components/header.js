@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { XIcon } from '@heroicons/react/solid';
+import Link from 'next/link';
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -32,7 +33,7 @@ export default function Header() {
         </div>
         <div className="flex items-center w-1/5 sm:w-2/5 bg-gradient-to-r from-black/0 to-black">
           <div className={`space-x-4 w-full font-semibold text-slate-100 text-left pl-4 invisible md:visible`}>
-              <a href="/" className="hover:border-b-2 py-1">Home</a>
+              <Link href="/" className="hover:border-b-2 py-1">Home</Link>
               <a href="#about" className="hover:border-b-2 py-1">About</a>
               <a href="#contact" className="hover:border-b-2 py-1">Contact</a>
               <a href="#menu" className="hover:border-b-2 py-1">Menu</a>
