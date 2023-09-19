@@ -62,18 +62,18 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="w-full text-white flex backdrop-blur h-1/6 p-0 bg-white py-2 space-x-2">
+        <div className="w-full text-white flex backdrop-blur h-1/6 p-0 bg-white border-y-4">
             <img className="w-1/3 object-cover" src="/pic4.jpg" alt="Image 1" />
             <img className="w-1/3 object-cover" src="/labola.jpg" alt="Image 2" />
             <img className="w-1/3 object-cover" src="/pic3.jpg" alt="Image 3" />
         </div>
         <div className="w-full">
             <div className="bg-black/90 text-center text-white p-0 font-serif text-1xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
-                <h1 onClick={() => setSection("specials")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Specials</h1>
-                <h1 onClick={() => setSection("menu")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 bg-white/75 text-black"> Food </h1>
-                <h1 onClick={() => setSection("cocktails")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Cocktails</h1>
-                <h1 onClick={() => setSection("wine")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Wine </h1>
-                <h1 onClick={() => setSection("beer")} className="sm:w-1/5 sm:border-r-2 border-slate-500 p-4 hover:bg-white/50"> Beer </h1>
+                <h1 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50"> Specials</h1>
+                <h1 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50"> Food </h1>
+                <h1 onClick={() => setSection("cocktails")} className="sm:w-1/5 p-4 hover:bg-white/50"> Cocktails</h1>
+                <h1 onClick={() => setSection("wine")} className="sm:w-1/5 p-4 hover:bg-white/50"> Wine </h1>
+                <h1 onClick={() => setSection("beer")} className="sm:w-1/5 p-4 hover:bg-white/50"> Beer </h1>
             </div>
             <div className="text-slate-900 backdrop-blur bg-white/0 text-center text-slate-800 lg:flex p-4 pt-16">
                 <Menu tab={section}/>
@@ -89,7 +89,7 @@ export default function Home() {
                     <p className="text-white mx-6 mb-6">
                         <i>Your Mediterranean Culinary Haven in Downtown Rochester. </i> We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. Can&apos;t wait to share our love for food with you!
                     </p>
-                    <div className="md:w-1/2 ml-6">
+                    <div className="ml-6">
                         <div className="border-none mt-10">
                             <h1 className="text-lg font-bold mb-2"> Contact Us</h1>
                             <p><b>Email:</b> labolarochester@gmail.com</p>
@@ -118,12 +118,12 @@ export default function Home() {
         </div>
         <div className="md:flex text-black bg-white" id="events">
             <div className="md:w-1/2 p-6">
-            <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola: <br/> Your Vision, Our Venue</h1>
+            <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin">Our Venue, Your Vision</i></h1>
                 <p className="mt-4">
                 Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
                 <div className="w-full p-4 text-right">
-                    <button className="bg-[#074041] font-semibold text-slate-100 mx-auto py-2 border-2 border-slate-100/25 inline-block px-4 rounded">
+                    <button className="bg-[#074041] font-semibold text-slate-100 mx-auto py-2 shadow-lg shadow-black/25 inline-block px-4 rounded">
                         Book Now
                     </button>
                 </div>
@@ -132,24 +132,28 @@ export default function Home() {
                 <CateringCarousel />
             </div>
         </div>
-        <div className="md:flex text-black bg-white" id="events">
+        <div className="md:flex text-black bg-white pt-6 md:pt-0" id="events">
             <div className="md:w-1/2">
-            <Slider autoplay="true" autoplaySpeed={5000}>
-                <img src={"/catering.jpg"} className="object-cover w-full h-full" />
-                <img src={"/catering3.jpg"} className="object-cover w-full h-full" />
-            </Slider>
+                <Slider autoplay="true" autoplaySpeed={4500}>
+                    <img src={"/catering.jpg"} className="object-cover w-full h-full" />
+                    <img src={"/catering3.jpg"} className="object-cover w-full h-full" />
+                </Slider>
             </div>
-            <div className="md:w-1/2 p-6">
-                <h1 className="font-bold text-2xl font-serif"> Catered By La Bola: <br/> Our Menu, Your Venue</h1>
+            <div className="md:w-1/2 p-6 order-first md:order-last">
+                <h1 className="font-bold text-2xl font-serif"> Catered By La Bola <br/> <i className="font-thin">Our Menu, Your Venue</i></h1>
                 <p className="mt-4">
-                Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it's a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
+                Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
                 </p>
                 <div className="w-full p-4 text-right">
-                    <button className="bg-[#074041] font-semibold text-slate-100 mx-auto py-2 border-2 border-slate-100/25 inline-block px-4 rounded">
-                        Book Now
+                    <button className="bg-[#074041] shadow-lg shadow-black/25 font-semibold text-slate-100 mx-auto py-2 inline-block px-4 rounded">
+                        Learn More
                     </button>
                 </div>
             </div>
+        </div>
+        <div className="bg-red-500 w-full p-4 text-center text-white bg-teal-900/75 bg-blur justify-content-between">
+            <small className="block text-sm mb-2 font-bold">Copyright &copy; 2023 La Bola</small>
+            <small className="text-xs">Made With &#x2764; By <a href="https://dylandunn.me" className="underline">Dylan Dunn</a></small>
         </div>
     </div>
     </>
