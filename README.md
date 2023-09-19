@@ -1,4 +1,5 @@
 ![](/public/LabolaWebsite.PNG)
+![](/public/LabolaWebsite2.PNG)
 
 Website can be seen live [HERE](https://la-bola-website.vercel.app/)
 
