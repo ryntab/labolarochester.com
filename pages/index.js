@@ -43,7 +43,7 @@ export default function Home() {
     <>
     <div className="bg-slate-100/50 overflow-hidden">
         <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-32 sm:pt-16 md:pt-24" style={{ backgroundImage: `url(/pic2.jpg)` }}>
-            <div className="ml-auto w-full h-full md:full bg-gradient-to-t from-black/75 border-slate-500">
+            <div className="ml-auto w-full h-full md:full bg-gradient-to-t from-black/100 border-slate-500">
                 <div className="bg-gradient-to-r mt-24 md:w-1/2 from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white">
                     Light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester.
                 </div>
@@ -56,7 +56,7 @@ export default function Home() {
                 <div className="bg-gradient-to-l md:w-1/2 ml-auto from-slate-900/100 font-semibold p-4 background-blur font-bold text-right text-white">
                     Join Us for Lunch, Dinner & Cocktails!
                 </div>
-                <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-4">
+                <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-8">
                     <button className="bg-[#074041] font-semibold text-white py-2 px-6 rounded-lg hover:bg-opacity-80 border-white/50 border-2 focus:bg-opacity-80">
                     Order Now
                     </button>
@@ -64,12 +64,12 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="w-full text-white flex backdrop-blur h-1/6 p-0 bg-white border-y-4">
+        <div className="w-full text-white flex backdrop-blur h-1/6 p-0 bg-white border-y-2">
             <img className="w-1/3 object-cover" src="/pic4.jpg" alt="Image 1" />
             <img className="w-1/3 object-cover" src="/labola.jpg" alt="Image 2" />
             <img className="w-1/3 object-cover" src="/pic3.jpg" alt="Image 3" />
         </div>
-        <div className="w-full">
+        <div className="w-full" id="menu">
             <div className="bg-black/90 text-center text-white p-0 font-serif text-1xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
                 <h1 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50"> Specials</h1>
                 <h1 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50"> Food </h1>
@@ -93,7 +93,7 @@ export default function Home() {
                     </p>
                     <div className="ml-6">
                         <div className="border-none mt-10">
-                            <h1 className="text-lg font-bold mb-2"> Contact Us</h1>
+                            <h1 className="text-lg font-bold mb-2" id="contact"> Contact Us</h1>
                             <p><b>Email:</b> labolarochester@gmail.com</p>
                             <p><b>Phone:</b> (585)-434-0044</p>
                         </div> 

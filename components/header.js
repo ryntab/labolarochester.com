@@ -26,14 +26,15 @@ export default function Header() {
               </>
             )}
           </button>
-          <img src="./avvino.png" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
+          <a href="https://www.avvinorochester.com/">
+            <img src="./avvino.png" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
+          </a>
         </div>
         <div className="w-32 min-w-32 md:h-48 h-32 border-2 mx-auto md:w-48 backdrop-blur -mt-2 bg-black/100 border-slate-500 /75 rounded-b-full shadow-2xl shadow-black ">
             <img src="/logo.png" className="object-cover md:mt-8 mt-4 w-20 md:w-32 relative mx-auto overflow-visible"></img>
         </div>
         <div className="flex items-center w-1/5 sm:w-2/5 bg-gradient-to-r from-black/0 to-black">
           <div className={`space-x-4 w-full font-semibold text-slate-100 text-left pl-4 invisible md:visible`}>
-              <Link href="/" className="hover:border-b-2 py-1">Home</Link>
               <a href="#about" className="hover:border-b-2 py-1">About</a>
               <a href="#contact" className="hover:border-b-2 py-1">Contact</a>
               <a href="#menu" className="hover:border-b-2 py-1">Menu</a>
@@ -42,10 +43,10 @@ export default function Header() {
         </div>
     </div>
     <div className={`fixed w-0 h-0 pl-8 space-y-8 py-8 z-40 w-full bg-black/75 font-semibold text-slate-100 text-left ${isMenuOpen ? 'pt-24 visible h-auto dropdown-enter dropdown-enter-active' : 'invisible dropdown-exit dropdown-exit-active'} md:invisible`}>
-        <a className="block">About</a>
-        <a className="block">Contact</a>
-        <a className="block">Menu</a>
-        <a className="block">Events</a>
+        <a className="block" href="#about">About</a>
+        <a className="block" href="#contact">Contact</a>
+        <a className="block" href="#menu">Menu</a>
+        <a className="block" href="#events">Events</a>
     </div>
     </>
   );
