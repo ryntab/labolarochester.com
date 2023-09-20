@@ -43,21 +43,23 @@ export default function Home() {
     <>
     <div className="bg-slate-100/50 overflow-hidden">
         <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-32 sm:pt-16 md:pt-24" style={{ backgroundImage: `url(/pic2.jpg)` }}>
-            <div className="ml-auto w-full sm:w-1/3 bg-black/25 backdrop-blur-sm border-slate-500">
-                <div className="bg-gradient-to-r from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white">
+            <div className="ml-auto w-full h-full md:full bg-gradient-to-t from-black/75 border-slate-500">
+                <div className="bg-gradient-to-r mt-24 md:w-1/2 from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white">
                     Light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester.
                 </div>
-                <div className="bg-gradient-to-l from-slate-900/100 font-semibold p-4 background-blur mb-4 text-right text-white">
+                <div className="bg-gradient-to-l md:w-1/2  ml-auto from-slate-900/100 font-semibold p-4 background-blur mb-4 text-right text-white">
                     Seasonal menu with daily specials, rotating sangrias, and specialty cocktails.
                 </div>
-                <div className="bg-gradient-to-r from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white">
+                <div className="bg-gradient-to-r md:w-1/2 from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white">
                     Located in the heart of downtown Rochester at the <span className="font-bold underline">Mercantile on Main</span>
                 </div>
-                <div className="bg-gradient-to-l from-slate-900/100 font-semibold p-4 background-blur font-bold text-right text-white">
+                <div className="bg-gradient-to-l md:w-1/2 ml-auto from-slate-900/100 font-semibold p-4 background-blur font-bold text-right text-white">
                     Join Us for Lunch, Dinner & Cocktails!
                 </div>
-                <div className="text-center p-4 background-blur font-black text-white py-8">
-                    <button className="w-full bg-[#074041] text-slate-100 mx-auto py-4 border-2 rounded border-slate-100/25">Order Now</button>
+                <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-4">
+                    <button className="bg-[#074041] font-semibold text-white py-2 px-6 rounded-lg hover:bg-opacity-80 border-white/50 border-2 focus:bg-opacity-80">
+                    Order Now
+                    </button>
                 </div>
             </div>
         </div>
@@ -117,8 +119,11 @@ export default function Home() {
             </div>
         </div>
         <div className="md:flex text-black bg-white" id="events">
-            <div className="md:w-1/2 p-6">
-            <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin">Our Venue, Your Vision</i></h1>
+            <div className="md:w-1/2 md:hidden">
+                <CateringCarousel />
+            </div>
+            <div className="md:w-1/2 p-6 flex-1">
+                <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin">Our Venue, Your Vision</i></h1>
                 <p className="mt-4">
                 Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
@@ -128,11 +133,11 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 flex-1 hidden md:block">
                 <CateringCarousel />
             </div>
         </div>
-        <div className="md:flex text-black bg-white pt-6 md:pt-0" id="events">
+        <div className="md:flex flex-1 text-black bg-white" id="events">
             <div className="md:w-1/2">
                 <Slider autoplay="true" autoplaySpeed={4500}>
                     <img src={"/catering.jpg"} className="object-cover w-full h-full" />
