@@ -51,15 +51,16 @@ const Book = () => {
 
 
   return (
-    <div className="container mx-auto max-w-2xl bg-teal-900/75 p-6 pt-48 backdrop-blur">
+    <div className="container mx-auto max-w-2xl bg-teal-900/75 pt-0 backdrop-blur">
+      <img className="w-full -m-x-6 mb-4 object-cover h-[50vh]" src="event2.jpg"/>
       <Link href="/"
           type="submit"
-          className="bg-black/75 shadow-lg hover:bg-black/90 text-white font-bold py-2 inline-block px-4 rounded mr-auto block"
+          className="bg-black/75 shadow-lg mx-6 hover:bg-black/90 text-white font-bold py-2 inline-block px-4 rounded mr-auto block"
         >
           Back
         </Link>
-      <h1 className="text-2xl font-bold mt-4 text-white mb-4">Event / Catering Inquiry Form</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 className="px-6 text-2xl font-bold mt-4 text-white mb-2">Event / Catering Inquiry Form</h1>
+      <form onSubmit={handleSubmit} className="p-6">
         {/* Name */}
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-100 text-sm font-bold mb-2">
@@ -209,7 +210,7 @@ const Book = () => {
           Submit
         </button>
       </form>
-        <p className="text-sm text-gray-400 mt-4">
+        <p className="text-sm text-gray-400 mt-4 px-6 pb-6">
             Note: Submitting this form does not guarantee the availability or booking of your event. Our team will review your request and contact you to discuss the details and confirm the event.
         </p>
     </div>
