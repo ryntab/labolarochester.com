@@ -139,7 +139,7 @@ export default function Home() {
                 <CateringCarousel />
             </div>
         </div>
-        <div className="md:flex flex-1 text-black bg-white" id="events">
+        <div className="md:flex flex-1 text-white bg-black" id="events">
             <div className="md:w-1/2">
                 <Slider autoplay="true" autoplaySpeed={4500}>
                     <img src={"/catering.jpg"} className="object-cover w-full h-full" />
@@ -153,7 +153,7 @@ export default function Home() {
                 </p>
                 <div className="w-full p-4 text-right">
                     <Link href="/bookAnEvent" className="bg-[#074041] shadow-lg shadow-black/25 font-semibold text-slate-100 mx-auto py-2 inline-block px-4 rounded">
-                        Book Now
+                        Catering Inquiry
                     </Link>
                 </div>
             </div>

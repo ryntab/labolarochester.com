@@ -53,3 +53,7 @@ body {
     width: 80%;
     text-align: left; /* Align text to the left */
   }
+
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
