@@ -8,6 +8,7 @@ export default function Document() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
             <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
             <title>La Bola by Avvino</title>
+            <script type="text/javascript" async src="//l.getsitecontrol.com/p43e1mm7.js"></script>
         </Head>
         <body className="relative bg-[url(/bg2.jpg)] backdrop-filter bg-fixed bg-cover">
           <div class="absolute inset-0 opacity-100 z-[-1] bg-fixed bg-gradient-to-t from-slate-900"></div>

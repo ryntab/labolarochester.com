@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import Link from 'next/link';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -57,9 +59,9 @@ export default function Home() {
                     Join Us for Lunch, Dinner & Cocktails!
                 </div>
                 <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-8">
-                    <button className="bg-[#074041] font-semibold text-white py-2 px-6 rounded-lg hover:bg-opacity-80 border-white/50 border-2 focus:bg-opacity-80">
+                    <Link href="https://google.com" className="bg-[#074041] font-semibold text-white py-2 px-6 rounded-lg hover:bg-opacity-80 border-white/50 border-2 focus:bg-opacity-80">
                     Order Now
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -128,9 +130,9 @@ export default function Home() {
                 Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
                 <div className="w-full p-4 text-right">
-                    <button className="bg-[#074041] font-semibold text-slate-100 mx-auto py-2 shadow-lg shadow-black/25 inline-block px-4 rounded">
+                    <Link href="/bookAnEvent" className="bg-[#074041] font-semibold text-slate-100 mx-auto py-2 shadow-lg shadow-black/25 inline-block px-4 rounded">
                         Book Now
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className="md:w-1/2 flex-1 hidden md:block">
@@ -150,9 +152,9 @@ export default function Home() {
                 Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
                 </p>
                 <div className="w-full p-4 text-right">
-                    <button className="bg-[#074041] shadow-lg shadow-black/25 font-semibold text-slate-100 mx-auto py-2 inline-block px-4 rounded">
-                        Learn More
-                    </button>
+                    <Link href="/bookAnEvent" className="bg-[#074041] shadow-lg shadow-black/25 font-semibold text-slate-100 mx-auto py-2 inline-block px-4 rounded">
+                        Book Now
+                    </Link>
                 </div>
             </div>
         </div>
