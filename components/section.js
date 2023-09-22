@@ -6,7 +6,7 @@ export default function Section(pageProps) {
     <div className="lg:w-1/3 font-serif">
         <h1 className="text-2xl mb-8 font-semibold"> {pageProps.title} </h1>
 	{pageProps.sectionItems.map((sectionItem, index) => (
-        	<Item name=${sectionItem.name} price=${sectionItem.price} desc=${sectionItem.desc}/>
+        	<Item name={sectionItem.name} price={sectionItem.price} desc={sectionItem.desc}/>
 	))}
     </div>
     )
