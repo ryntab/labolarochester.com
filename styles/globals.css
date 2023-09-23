@@ -18,9 +18,17 @@
   border-bottom-right-radius: 10px; /* Set the desired radius */
 }
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
     width:100%;
     background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
 }
 
 .hamburger-bar {

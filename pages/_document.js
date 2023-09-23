@@ -23,9 +23,14 @@ export default function Document() {
         <Head>
             <meta charSet="UTF-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+
             <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"></link>
+
             <title>La Bola by Avvino</title>
             <meta name="description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester." />
+
             <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
             <script type="text/javascript" async src="//l.getsitecontrol.com/p43e1mm7.js"></script>
         </Head>

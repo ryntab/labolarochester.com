@@ -128,13 +128,107 @@ export default function Menu(pageProps) {
 			name: "LA BOLA OLD FASHIONED",
 			desc:"Tequila, Sage Syrup, Orange, Bitters",
 			price: "12"
-		}],
-		redWine: [],
-		whiteWine: [],
-		greenWine: [],
-		cannedBeer: [],
-		draftBeer: []
-	}
+	    }],
+		wine: [{
+            name: "CAVA",
+            desc: "Conquilla, Brut - N/V",
+            price: "10/36"
+        }],
+		domesticWine: [{
+            name: "RAVINES. DRY RIESLING, 'ARGETSINGER VINEYARD', FINGER LAKES, 2019",
+            desc: " ",
+            price: "48"
+        }, {
+            name: "LIEU DIT, MELON, SANTA MARIA VALLEY, 2021",
+            desc: " ",
+            price: "45"
+        }, {
+            name: "CRISTOM, CHARDONNAY, EOLA-AMITY HILLS, 2020",
+            desc: "",
+            price: "65"
+        }, {
+            name: "RAMEY, CHARDONNAY, RUSSIAN RIVER VALLEY, 2019",
+            desc: "",
+            price: "75"
+        }],
+		importedWine: [{
+            name: "HENRI BILLIOT, GRAND CRU RESERVE BRUT, CHAMPANGE, MV",
+            desc: "",
+            price: "100"
+        }, {
+            name: "FOLIUM, SAUVIGNON BLANC MARLBOROUGH, 2020",
+            desc: "",
+            price: "45"
+        }, {
+            name: "MILLE REVES, VOUVRAY, 2020",
+            desc: "",
+            price: "40"
+        }, {
+            name: "LA ANTIGUA CLASSICO, RIOJA BLANCO, 2021",
+            desc: "",
+            price: "50"
+        }, {
+            name: "DOMAINE ARLAUD 'RONCEVIE' BOURGOGNE, 2019",
+            desc: "",
+            price: "65"
+        }, {
+            name: "VINHOS FITAPERTA, 'A TOURIGA VIA NUA' ALENTEJANO, 2020",
+            desc: "",
+            price: "48"
+        }, {
+            name: "LUIS SEABRA, 'XISTO ILIMATADO' DOURO, 2020",
+            desc: "",
+            price: "55"
+        }, {
+            name: "BODEGAS VIZCARRA RAMOS, 'JC' RIBERA DEL DUERO, 2019",
+            desc: "",
+            price: "70"
+
+        }],
+		draftBeer: [{
+            name: "OTHER HALF - ROTATING SELECTION",
+            desc: "",
+            price: ""
+        }, {
+            name: "BRINDLE HAUS - ROTATING SELECTION",
+            desc: "",
+            price: ""
+        }, {
+            name: "FIFTH FRAME - CRISPY LIGHT",
+            desc: "",
+            price: ""
+        }, {
+            name: "STEUBEN BREWING - OCTOBERFEST",
+            desc: "",
+            price: ""
+        }, {
+            name: "RISING STORM - HAWAIIAN PUNCH SOUR",
+            desc: "",
+            price: ""
+        }, {
+            name: "GENESEE - PINEAPPLE KOLSCH",
+            desc: "",
+            price: ""
+        }],
+		cannedBeer: [{
+            name: "BRINDLEHAUS - BLACKBERRY WAFFLE CONE",
+            desc: "",
+            price: ""
+        }, {
+            name: "K2 - PATRIOT POP SOUR",
+            desc: "",
+            price: ""
+        }],
+        bottledBeer: [{
+            name: "MORITZ - BARCELONA PILSNER",
+            desc: "",
+            price: ""
+        }, {
+            name: "COORS LIGHT",
+            desc: "",
+            price: ""
+        }]
+	    }
 
         switch(pageProps.tab) {
             case "specials":
@@ -161,16 +255,17 @@ export default function Menu(pageProps) {
             case "wine":
                 return (
                     <>
-                        <Section title="Red" sectionItems={menu.specials}/>
-                        <Section title="White" sectionItems={menu.specials}/>
-                        <Section title="Green" sectionItems={menu.specials}/>
+                        <Section title="Wine" sectionItems={menu.wine}/>
+                        <Section title="Domestic Bottles" sectionItems={menu.domesticWine}/>
+                        <Section title="Imported Bottles" sectionItems={menu.importedWine}/>
                     </>
                 )
             case "beer":
                 return (
                     <>
-                        <Section title="Canned" sectionItems={menu.specials}/>
-                        <Section title="Draft" sectionItems={menu.specials}/>
+                        <Section title="Draft" sectionItems={menu.draftBeer}/>
+                        <Section title="Canned" sectionItems={menu.cannedBeer}/>
+                        <Section title="Bottled" sectionItems={menu.bottledBeer}/>
                     </>
                 )
         }
