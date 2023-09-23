@@ -77,7 +77,7 @@ export default function Home() {
                 <h1 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50"> Food </h1>
                 <h1 onClick={() => setSection("cocktails")} className="sm:w-1/5 p-4 hover:bg-white/50"> Cocktails</h1>
                 <h1 onClick={() => setSection("wine")} className="sm:w-1/5 p-4 hover:bg-white/50"> Wine </h1>
-                <h1 onClick={() => setSection("beer")} className="sm:w-1/5 p-4 hover:bg-white/50"> Beer </h1>
+                <h1 onClick={() => setSection("beer")} className="sm:w-1/5 p-4 hover:bg-white/50"> Other Beverages </h1>
             </div>
             <div className="text-slate-900 backdrop-blur bg-stone-100/50 bg-cover text-slate-800 lg:flex p-4 pt-16 lg:justify-between">
                 <Menu tab={section}/>

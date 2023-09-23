@@ -5,7 +5,7 @@ export default function Item(pageProps) {
                 <h2 className="font-semibold uppercase"> {pageProps.name}</h2>
                 <b className="ml-2 font-bold lowercase"> {pageProps.price} </b>
             </span>
-            <p className="mb-4 mt-2"> {pageProps.desc} </p>
+            <p className="mb-4 mt-2 italic text-sm"> {pageProps.desc} </p>
         </div>
     )
 }

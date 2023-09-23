@@ -128,72 +128,153 @@ export default function Menu(pageProps) {
 			name: "LA BOLA OLD FASHIONED",
 			desc:"Tequila, Sage Syrup, Orange, Bitters",
 			price: "12"
-	    }],
+	    }, {
+            name: "ROCHESTER SOUR",
+            desc: "Bourbon, Peach, Simple Syrup, Tempranillo Float",
+            price: "12"
+        }, {
+            name: "STARBOARD",
+            desc: "Spanish Brandy, Scotch, Orange Bitters, Marcona Almond Mist",
+            price: "12"
+        }, {
+            name: "Sangria #1",
+            desc: "Vodka, Vinho Verde, Manzanilla, Watermelon, Cucumber, Lemon, Lime",
+            price: "13"
+        }, {
+            name: "Sangira #2",
+            desc: "Tequila, Rose Vermouth, Orange, Grapefruit, Lime, Ravines Rose",
+            price: "13"
+        }],
+        unasin: [{
+            name: "DENNIS RETIRES IN VENICE",
+            desc: "Seedlip Spice, Grapefruit, Maple, Star Anise",
+            price: "10"
+        }, {
+            name: "Hazy Melonade",
+            desc: "Watermelon, Lime, Arugula, Strawberry, Hazy IPA (N/A)",
+            price: "10"
+        }, {
+            name: "Sangria Sunrise",
+            desc: "Orange, Grapefruit, Lime, Strawberry, Bubbles",
+            price: "6"
+        }],
 		wine: [{
             name: "CAVA",
-            desc: "Conquilla, Brut - N/V",
+            desc: "Conquilla, Brut, Spain",
             price: "10/36"
+        }, {
+            name: "CAVA",
+            desc: "Conquilla, Brut Rose, Spain",
+            price: "13/42"
+        }, {
+            name: "Vihno Verde",
+            desc: "Quinta Da Lixa, Portugal",
+            price: "9/29"
+        }, {
+            name: "Pinot Grigio",
+            desc: "Vigneti Del Sole, Italy",
+            price: "10/32"
+        }, {
+            name: "Sauvignon Blanc",
+            desc: "Cannonball, California",
+            price: "11/36"
+        }, {
+            name: "MOSCATO",
+            desc: "Mount Hernon, Israel",
+            price: "12/40"
+        }, {
+            name: "ALBARINO",
+            desc: "Columna, Spain",
+            price: "12/40"
+        }, {
+            name: "MOSCOFILERO",
+            desc: "Domaine Skouras, Greece",
+            price: "13/42"
+        }, {
+            name: "CHARDONNAY",
+            desc: "Sean Minor, California",
+            price: "13/42"
+        }, {
+            name: "PINOT NOIR ROSé",
+            desc: "Ravines, New York",
+            price: "13/42"
+        }, {
+            name: "ORANGE BLEND",
+            desc: "Adega De Penalva, Portugal",
+            price: "12/40"
+        }, {
+            name: "PINOT NOIR",
+            desc: "Blood Root, California",
+            price: "11/36"
+        }, {
+            name: "RED BLEND",
+            desc: "Boony Doon, California",
+            price: "14/48"
+        }, {
+            name: "TEMPRANILLO",
+            desc: "Finca Torremilanos, Spain",
+            price: "12/40"
         }],
 		domesticWine: [{
-            name: "RAVINES. DRY RIESLING, 'ARGETSINGER VINEYARD', FINGER LAKES, 2019",
-            desc: " ",
+            name: "RAVINES, DRY RIESLING, 'ARGETSINGER VINEYARD'",
+            desc: "Finger Lakes, 2019",
             price: "48"
         }, {
-            name: "LIEU DIT, MELON, SANTA MARIA VALLEY, 2021",
-            desc: " ",
+            name: "LIEU DIT, MELON",
+            desc: "Santa Maria Valley, 2021",
             price: "45"
         }, {
-            name: "CRISTOM, CHARDONNAY, EOLA-AMITY HILLS, 2020",
-            desc: "",
+            name: "CRISTOM, CHARDONNAY",
+            desc: "Eola-Amity Hills, 2020",
             price: "65"
         }, {
-            name: "RAMEY, CHARDONNAY, RUSSIAN RIVER VALLEY, 2019",
-            desc: "",
+            name: "RAMEY, CHARDONNAY",
+            desc: "Russian River Valley, 2019",
             price: "75"
-        }],
-		importedWine: [{
-            name: "HENRI BILLIOT, GRAND CRU RESERVE BRUT, CHAMPANGE, MV",
-            desc: "",
-            price: "100"
         }, {
-            name: "FOLIUM, SAUVIGNON BLANC MARLBOROUGH, 2020",
-            desc: "",
-            price: "45"
-        }, {
-            name: "MILLE REVES, VOUVRAY, 2020",
-            desc: "",
-            price: "40"
-        }, {
-            name: "LA ANTIGUA CLASSICO, RIOJA BLANCO, 2021",
-            desc: "",
-            price: "50"
-        }, {
-            name: "DOMAINE ARLAUD 'RONCEVIE' BOURGOGNE, 2019",
-            desc: "",
-            price: "65"
-        }, {
-            name: "VINHOS FITAPERTA, 'A TOURIGA VIA NUA' ALENTEJANO, 2020",
-            desc: "",
-            price: "48"
-        }, {
-            name: "LUIS SEABRA, 'XISTO ILIMATADO' DOURO, 2020",
-            desc: "",
+            name: "LIEU DIT, Gamay",
+            desc: "Santa Ynez Valley, 2018",
             price: "55"
         }, {
-            name: "BODEGAS VIZCARRA RAMOS, 'JC' RIBERA DEL DUERO, 2019",
-            desc: "",
+            name: "OSMOTE, CABERNET FRANC",
+            desc: "Finger Lakes, 2021",
+            price: "48"
+        }, {
+            name: "CARDANO, CABERNET SAUVIGNON",
+            desc: "Napa Valley, 2018",
+            price: "65"
+        }],
+		importedWine: [{
+            name: "HENRI BILLIOT, GRAND CRU RESERVE BRUT",
+            desc: "Champange, MV",
+            price: "100"
+        }, {
+            name: "FOLIUM, SAUVIGNON BLANC",
+            desc: "Marlborough, 2020",
+            price: "45"
+        }, {
+            name: "MILLE REVES, VOUVRAY",
+            desc: "2020",
+            price: "40"
+        }, {
+            name: "LA ANTIGUA CLASSICO, RIOJA BLANCO",
+            desc: "2021",
+            price: "50"
+        }, {
+            name: "DOMAINE ARLAUD 'RONCEVIE' BOURGOGNE",
+            desc: "2019",
+            price: "65"
+        }, {
+            name: "LUIS SEABRA, 'XISTO ILIMATADO' DOURO",
+            desc: "2020",
+            price: "55"
+        }, {
+            name: "BODEGAS VIZCARRA RAMOS, 'JC'",
+            desc: "Ribera Del Duero, 2019",
             price: "70"
 
         }],
 		draftBeer: [{
-            name: "OTHER HALF - ROTATING SELECTION",
-            desc: "",
-            price: ""
-        }, {
-            name: "BRINDLE HAUS - ROTATING SELECTION",
-            desc: "",
-            price: ""
-        }, {
             name: "FIFTH FRAME - CRISPY LIGHT",
             desc: "",
             price: ""
@@ -211,22 +292,75 @@ export default function Menu(pageProps) {
             price: ""
         }],
 		cannedBeer: [{
-            name: "BRINDLEHAUS - BLACKBERRY WAFFLE CONE",
-            desc: "",
-            price: ""
+            name: "MORTALIS",
+            desc: "Rotating Selection",
+            price: "9"
         }, {
-            name: "K2 - PATRIOT POP SOUR",
-            desc: "",
-            price: ""
+            name: "BRINDLE HAUS",
+            desc: "Rotating Selection",
+            price: "8"
+        }, {
+            name: "N/A BEER",
+            desc: "Rotating Selection",
+            price: "5"
+        }, {
+            name: "HIGH NOON",
+            desc: "Assorted Flavors",
+            price: "7"
         }],
         bottledBeer: [{
-            name: "MORITZ - BARCELONA PILSNER",
-            desc: "",
-            price: ""
-        }, {
             name: "COORS LIGHT",
             desc: "",
-            price: ""
+            price: "5"
+        }, {
+            name: "LABATT BLUE",
+            desc: "",
+            price: "5"
+        }, {
+            name: "LABATT BLUE LIGHT",
+            desc: "",
+            price: "5"
+        }, {
+            name: "HEINEKEN",
+            desc: "",
+            price: "6"
+        }, {
+            name: "ESTRELLA DAMM",
+            desc: "",
+            price: "6"
+        }],
+        beverages: [{
+            name: "COKE PRODUCTS",
+            desc: "Coke, Diet Coke, Sprite, Ginger Ale",
+            price: "2"
+        }, {
+            name: "GALAVANIA",
+            desc: "Blood Orange Soda, Pomegranate Soda",
+            price: "4"
+        }, {
+            name: "HARNEY'S",
+            desc: "Black Iced Tea, Currant Tea",
+            price: "4"
+        }, {
+            name: "HANKS'S GRAPE SODA",
+            desc: "",
+            price: "4"
+        }, {
+            name: "JONE'S ROOT BEER",
+            desc: "",
+            price: "4"
+        }, {
+            name: "SARATOGA SPARKLING WATER",
+            desc: "",
+            price: "3"
+        }, {
+            name: "FIJI STILL WATER",
+            desc: "",
+            price: "3"
+        }, {
+            name: "HOT TEA & COFFEE",
+            desc: "Ask Your Server About Our Current Selection",
+            price: "~"
         }]
 	    }
 
@@ -250,6 +384,7 @@ export default function Menu(pageProps) {
                 return (
                     <>
                         <Section title="Cocktails" sectionItems={menu.cocktails}/>
+                        <Section title="Una Sin (Alcohol Free)" sectionItems={menu.unasin}/>
                     </>
                 )
             case "wine":
@@ -266,6 +401,7 @@ export default function Menu(pageProps) {
                         <Section title="Draft" sectionItems={menu.draftBeer}/>
                         <Section title="Canned" sectionItems={menu.cannedBeer}/>
                         <Section title="Bottled" sectionItems={menu.bottledBeer}/>
+                        <Section title="N/A Beverages" sectionItems={menu.beverages}/>
                     </>
                 )
         }
