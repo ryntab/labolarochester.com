@@ -1,8 +1,11 @@
 export default function Item(pageProps) {
     return (
-        <>
-            <h2 className="font-semibold uppercase"> {pageProps.name} <b className="ml-2 font-bold lowercase"> {pageProps.price} </b></h2>
-            <p className="mb-4"> Cockles, Octopus, Razor Clams or Scallops </p>
-        </>
+        <div className="mr-2">
+            <span className="flex justify-between border-b-2 border-dotted border-black">
+                <h2 className="font-semibold uppercase"> {pageProps.name}</h2>
+                <b className="ml-2 font-bold lowercase"> {pageProps.price} </b>
+            </span>
+            <p className="mb-4 mt-2"> {pageProps.desc} </p>
+        </div>
     )
 }

@@ -2,9 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+.reverse-top-left {
+  border-top-left-radius: 10px; /* Set the desired radius */
+}
+
+.reverse-top-right {
+  border-top-right-radius: 10px; /* Set the desired radius */
+}
+
+.reverse-bottom-left {
+  border-bottom-left-radius: 10px; /* Set the desired radius */
+}
+
+.reverse-bottom-right {
+  border-bottom-right-radius: 10px; /* Set the desired radius */
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
     width:100%;
     background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
 }
 
 .hamburger-bar {
