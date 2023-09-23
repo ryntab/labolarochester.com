@@ -158,7 +158,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className="bg-red-500 w-full px-8 py-4 text-center text-white bg-slate-900 bg-blur justify-between md:flex">
+        <div className="bg-red-500 w-full px-8 py-4 text-center text-white bg-stone-900 bg-blur justify-between md:flex">
             <small className="block text-sm font-bold">Copyright &copy; 2023 La Bola</small>
             <small className="text-xs">Made With &#x2764; By <a href="https://dylandunn.me" className="underline">Dylan Dunn</a></small>
         </div>
