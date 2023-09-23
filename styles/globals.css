@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.reverse-top-left {
+  border-top-left-radius: 10px; /* Set the desired radius */
+}
+
+.reverse-top-right {
+  border-top-right-radius: 10px; /* Set the desired radius */
+}
+
+.reverse-bottom-left {
+  border-bottom-left-radius: 10px; /* Set the desired radius */
+}
+
+.reverse-bottom-right {
+  border-bottom-right-radius: 10px; /* Set the desired radius */
+}
+
 body {
     width:100%;
     background-color: black;

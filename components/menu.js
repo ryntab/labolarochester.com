@@ -32,17 +32,17 @@ export default function Menu(pageProps) {
 		}, 
 		{
 			name: "SAFFRON ROMESCO",
-			desc: "Yellow Pepper, Sungold Tomato, Hazelnuts, Marcona Almonds. Served With flatbread.",
+			desc: "Yellow Pepper, Sungold Tomato, Hazelnuts, Marcona Almonds. Served With Flatbread.",
 			price: "8"
 		},
 		{
 			name: "ZUCCHINI DIP",
-			desc: "Yogurt, Mint, Pistachio, Perserved Lemon",
+			desc: "Yogurt, Mint, Pistachio, Perserved Lemon. Served With Flatbread",
 			price: "8"
 		}, 
 		{
 			name: "SMOKE SALMON & TROUT DIP",
-			desc: "Lemon Aoli, Shallots, Dill",
+			desc: "Lemon Aioli, Shallots, Dill. Served With Flatbread",
 			price: "9"
 		}],
 		sandwiches: [{
@@ -140,7 +140,7 @@ export default function Menu(pageProps) {
             case "specials":
                 return (
                     <>
-                        <p className="text-lg italic mx-auto my-8">Ask Your Server Or Call For Daily Specials</p>
+                        <p className="text-lg font-bold italic font-serif mx-auto mt-8 mb-16">Ask Your Server Or Call For Daily Specials</p>
                     </>
                 )
             case "menu":
@@ -149,7 +149,7 @@ export default function Menu(pageProps) {
                         <Section title="Tapas" sectionItems={menu.tapas}/>
                         <Section title="Sandwiches" sectionItems={menu.sandwiches}/>
                         <Section title="Salads" sectionItems={menu.more}/>
-			<Section title="Entrees" sectionItems={menu.entrees}/>
+			            <Section title="Entrees" sectionItems={menu.entrees}/>
                     </>
                 )
             case "cocktails":

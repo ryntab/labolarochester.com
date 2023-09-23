@@ -39,7 +39,7 @@ const images = [
   };
 
 export default function Home() {
-    const [section, setSection] = React.useState("menu");
+    const [section, setSection] = React.useState("specials");
     
   return (
     <>
@@ -59,27 +59,27 @@ export default function Home() {
                     Join Us for Lunch, Dinner & Cocktails!
                 </div>
                 <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-8">
-                    <Link href="https://google.com" className="bg-[#074041] font-semibold text-white py-2 px-6 rounded-lg hover:bg-opacity-80 border-white/50 border-2 focus:bg-opacity-80">
+                    <Link href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="bg-[#074041] font-semibold text-white py-2 px-6 rounded-lg hover:bg-opacity-80 border-white/50 border-2 focus:bg-opacity-80">
                     Order Now
                     </Link>
                 </div>
             </div>
         </div>
 
-        <div className="w-full text-white flex backdrop-blur h-1/6 p-0 bg-white border-y-2">
+        <div className="w-full text-white flex backdrop-blur h-1/6 p-0 border-slate-500 border-y-4">
             <img className="w-1/3 object-cover" src="/pic4.jpg" alt="Image 1" />
             <img className="w-1/3 object-cover" src="/labola.jpg" alt="Image 2" />
             <img className="w-1/3 object-cover" src="/pic3.jpg" alt="Image 3" />
         </div>
         <div className="w-full" id="menu">
-            <div className="bg-black/90 text-center text-white p-0 font-serif text-1xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
+            <div className="bg-black/90 text-center text-white p-0 font-serif text-1xl mx-auto uppercase flex-wrap sm:flex cursor-pointer shadow-lg shadow-black/50">
                 <h1 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50"> Specials</h1>
                 <h1 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50"> Food </h1>
                 <h1 onClick={() => setSection("cocktails")} className="sm:w-1/5 p-4 hover:bg-white/50"> Cocktails</h1>
                 <h1 onClick={() => setSection("wine")} className="sm:w-1/5 p-4 hover:bg-white/50"> Wine </h1>
                 <h1 onClick={() => setSection("beer")} className="sm:w-1/5 p-4 hover:bg-white/50"> Beer </h1>
             </div>
-            <div className="text-slate-900 backdrop-blur bg-white/0 text-center text-slate-800 lg:flex p-4 pt-16">
+            <div className="text-slate-900 backdrop-blur bg-white/50 text-slate-800 lg:flex p-4 pt-16 lg:space-x-4">
                 <Menu tab={section}/>
             </div>
         </div>
@@ -96,7 +96,7 @@ export default function Home() {
                     <div className="ml-6">
                         <div className="border-none mt-10">
                             <h1 className="text-lg font-bold mb-2" id="contact"> Contact Us</h1>
-                            <p><b>Email:</b> labolarochester@gmail.com</p>
+                            <p><b>Email:</b> contact@labolarochester.com</p>
                             <p><b>Phone:</b> (585)-434-0044</p>
                         </div> 
                         <div className="">
@@ -158,8 +158,8 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className="bg-red-500 w-full p-4 text-center text-white bg-teal-900/75 bg-blur justify-content-between">
-            <small className="block text-sm mb-2 font-bold">Copyright &copy; 2023 La Bola</small>
+        <div className="bg-red-500 w-full px-8 py-4 text-center text-white bg-slate-900 bg-blur justify-between md:flex">
+            <small className="block text-sm font-bold">Copyright &copy; 2023 La Bola</small>
             <small className="text-xs">Made With &#x2764; By <a href="https://dylandunn.me" className="underline">Dylan Dunn</a></small>
         </div>
     </div>

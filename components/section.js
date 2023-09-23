@@ -3,9 +3,9 @@ import Item from "./Item"
 
 export default function Section(pageProps) {
     return (
-    <div className="lg:w-1/4 mx-4 font-serif">
+    <div className="lg:w-1/4 mb-16 lg:mt-0 font-serif max-w-lg mx-auto">
         <h1 className="text-2xl mb-8 font-semibold"> {pageProps.title} </h1>
-	{pageProps.sectionItems.map((sectionItem, index) => (
+	    {pageProps.sectionItems.map((sectionItem, index) => (
         	<Item name={sectionItem.name} price={sectionItem.price} desc={sectionItem.desc}/>
 	))}
     </div>
