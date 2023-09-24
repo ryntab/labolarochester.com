@@ -91,28 +91,38 @@ export default function Home() {
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
     </Head>
     <div className="bg-slate-100/50 overflow-hidden">
-        <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-16 md:pt-24" style={{ backgroundImage: `url(/pic2.jpg)` }}>
-            <div className="ml-auto w-full h-full md:full bg-gradient-to-t from-black/100 border-slate-500">
-                <div className="bg-gradient-to-r mt-24 md:w-1/2 from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white">
-                    Light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester.
+        <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-8 md:pt-24" style={{ backgroundImage: `url(/pic2.jpg)` }}>
+            <div className="ml-auto w-full h-full md:full bg-gradient-to-t from-black/90 border-slate-500">
+                <div className="bg-gradient-to-r mt-24 md:w-1/2 from-black font-semibold p-4 background-blur mb-4 text-left text-white">
+                    <h6> 
+                        Light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester.
+                    </h6>
                 </div>
-                <div className="bg-gradient-to-l md:w-1/2  ml-auto from-slate-900/100 font-semibold p-4 background-blur mb-4 text-right text-white">
-                    Seasonal menu with daily specials, rotating sangrias, and specialty cocktails.
+                <div className="bg-gradient-to-l md:w-1/2  ml-auto from-black font-semibold p-4 background-blur mb-4 text-right text-white">
+                    <h6> 
+                        Seasonal menu with daily specials, rotating sangrias, and specialty cocktails.
+                    </h6>
                 </div>
-                <div className="bg-gradient-to-r md:w-1/2 from-slate-900/100 font-semibold p-4 background-blur mb-4 text-left text-white">
-                    Located in the heart of downtown Rochester at the <span className="font-bold underline">Mercantile on Main</span>
+                <div className="bg-gradient-to-r md:w-1/2 from-black font-semibold p-4 background-blur mb-4 text-left text-white">
+                    <h6>
+                        Located in the heart of downtown Rochester at the <span className="font-bold">Mercantile on Main</span>
+                    </h6>
                 </div>
-                <div className="bg-gradient-to-l md:w-1/2 ml-auto from-slate-900/100 font-semibold p-4 background-blur font-bold text-right text-white">
-                    Join Us for Lunch, Dinner & Cocktails!
+                <div className="bg-gradient-to-l md:w-1/2 ml-auto from-black font-semibold p-4 background-blur font-bold text-right text-white">
+                    <h6>
+                        Join Us for Lunch, Dinner & Cocktails!
+                    </h6>
                 </div>
                 <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-8">
-                    <Link href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="hover:bg-teal-900/75 bg-teal-900 mt-4 text-white font-semibold border-2 border-slate-500 inline-block py-2 px-8 rounded-lg hover:bg-opacity-80 focus:bg-opacity-80">
-                    Order Now
+                    <Link href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="hover:bg-white/75 bg-white/90 my-8 text-black font-semibold border-2 border-black/50 inline-block py-2 px-8 hover:bg-opacity-80 focus:bg-opacity-80">
+                        <h6>
+                            Order Now
+                        </h6>
                     </Link>
                 </div>
             </div>
         </div>
-        <div className="w-full text-white backdrop-blur p-0 border-slate-500 border-y-4 overflow-hidden">
+        <div className="w-full text-white backdrop-blur p-0 border-slate-500 border-y-2 overflow-hidden">
             <Slider {...settings}>
                 <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/pic4.jpg" alt="Image 1" />
                 <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/ryan.jpg" alt="Image 2" />
@@ -124,7 +134,7 @@ export default function Home() {
             </Slider>
         </div>
         <div className="w-full" id="menu">
-            <div className="bg-black/90 text-center text-white p-0 font-serif text-xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
+            <div className="bg-black text-center text-white p-0 font-serif text-xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
                 <h1 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Specials</h1>
                 <h1 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Food </h1>
                 <h1 onClick={() => setSection("cocktails")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Cocktails</h1>
@@ -135,7 +145,7 @@ export default function Home() {
                 <Menu tab={section}/>
             </div>
         </div>
-        <div className="bg-[#074041] md:flex" id="about">
+        <div className="bg-[#07403F] md:flex" id="about">
             <div className="md:w-1/2 bg-black">
                 <img src="gusbus.png" className="object-cover w-full h-full"></img>
             </div>
@@ -187,12 +197,12 @@ export default function Home() {
                 <CateringCarousel />
             </div>
             <div className="md:w-1/2 p-6 flex-1">
-                <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin">Our Venue, Your Vision</i></h1>
+                <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin text-xl">Our Venue, Your Vision</i></h1>
                 <p className="mt-4">
                 Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
                 <div className="w-full p-4 text-right">
-                    <Link href="/bookAnEvent" className="bg-[#074041] font-semibold text-slate-100 mx-auto py-2 inline-block px-4 rounded">
+                    <Link href="/bookAnEvent" className="bg-black font-semibold text-slate-100 mx-auto py-2 inline-block px-4">
                         Book Now
                     </Link>
                 </div>
@@ -210,12 +220,12 @@ export default function Home() {
                 </Slider>
             </div>
             <div className="md:w-1/2 p-6 order-first md:order-last">
-                <h1 className="font-bold text-2xl font-serif"> Catered By La Bola <br/> <i className="font-thin">Our Menu, Your Venue</i></h1>
+                <h1 className="font-bold text-2xl font-serif"> Catered By La Bola <br/> <i className="font-thin text-xl">Our Menu, Your Venue</i></h1>
                 <p className="mt-4">
                 Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
                 </p>
                 <div className="w-full p-4 text-right">
-                    <Link href="/bookAnEvent" className="bg-white text-black font-semibold mx-auto py-2 inline-block px-4 rounded">
+                    <Link href="/bookAnEvent" className="bg-white text-black font-semibold mx-auto py-2 inline-block px-4">
                         Catering Inquiry
                     </Link>
                 </div>
