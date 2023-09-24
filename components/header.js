@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { XIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 
+import { useEffect } from 'react';
+
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -9,24 +11,27 @@ export default function Header() {
     setMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    if (window.location.hash) {
+      const element = document.querySelector(window.location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
+
   return (
     <>
       <div className="backdrop-blur border-b-2 border-slate-500 w-full bg-black/50 h-16 md:h-24 flex shadow-2xl shadow-black overflow-visible fixed z-50 justify-content-between">
         <div className="w-1/5 sm:w-2/5 bg-gradient-to-r from-slate-900 flex items-center">
-        <button className="text-white text-xl font-semibold pl-8 visible md:invisible w-auto sm:w-0" onClick={toggleMenu}>
+          <button className="text-white text-xl font-semibold pl-8 visible md:invisible w-auto sm:w-0" onClick={toggleMenu}>
             {isMenuOpen ? (
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <i class="fas fa-close"></i>
             ) : (
-              <>
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-              </>
+              <i class="fas fa-bars"></i>
             )}
           </button>
-          <a href="https://www.avvinorochester.com/">
+          <a className="hidden md:block" href="https://www.avvinorochester.com/">
             <img src="./avvino.png" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
           </a>
         </div>
@@ -34,19 +39,19 @@ export default function Header() {
             <img src="/logo.png" className="object-cover md:mt-8 mt-4 w-20 md:w-32 relative mx-auto overflow-visible"></img>
         </div>
         <div className="flex items-center w-1/5 sm:w-2/5 bg-gradient-to-r from-black/0 to-black">
-          <div className={`space-x-4 w-full font-semibold text-slate-100 text-left pl-4 invisible md:visible`}>
-              <a href="#about" className="hover:border-b-2 py-1">About</a>
-              <a href="#contact" className="hover:border-b-2 py-1">Contact</a>
-              <a href="#menu" className="hover:border-b-2 py-1">Menu</a>
-              <a href="#events" className="hover:border-b-2 py-1">Events</a>
+          <div className={`space-x-4 w-full font-semibold mr-8 font-thin text-slate-100 text-right pl-4 invisible md:visible`}>
+            <Link href="/#about" onClick={toggleMenu} className="hover:border-b-2 py-1">About</Link>
+            <Link href="/#contact" onClick={toggleMenu} className="hover:border-b-2 py-1">Contact</Link>
+            <Link href="/#menu" onClick={toggleMenu} className="hover:border-b-2 py-1">Menu</Link>
+            <Link href="/#events" onClick={toggleMenu} className="hover:border-b-2 py-1">Events</Link>
           </div>
         </div>
     </div>
-    <div className={`fixed w-0 h-0 pl-8 space-y-8 py-8 z-40 w-full bg-black/75 font-semibold text-slate-100 text-left ${isMenuOpen ? 'pt-24 visible h-auto dropdown-enter dropdown-enter-active' : 'invisible dropdown-exit dropdown-exit-active'} md:invisible`}>
-        <a className="block" href="#about">About</a>
-        <a className="block" href="#contact">Contact</a>
-        <a className="block" href="#menu">Menu</a>
-        <a className="block" href="#events">Events</a>
+    <div className={`fixed w-0 h-0 pl-8 space-y-8 py-8 z-40 w-full bg-black/90 border-b-2 border-slate-500 font-semibold text-slate-100 text-left ${isMenuOpen ? 'pt-24 visible h-auto dropdown-enter dropdown-enter-active' : 'invisible dropdown-exit dropdown-exit-active'} md:invisible`}>
+            <Link href="/#about" onClick={toggleMenu} className="block">About</Link>
+            <Link href="/#contact" onClick={toggleMenu} className="block">Contact</Link>
+            <Link href="/#menu" onClick={toggleMenu} className="block">Menu</Link>
+            <Link href="/#events" onClick={toggleMenu} className="block">Events</Link>
     </div>
     </>
   );

@@ -368,7 +368,7 @@ export default function Menu(pageProps) {
             case "specials":
                 return (
                     <>
-                        <p className="text-lg font-bold italic font-serif mx-auto mt-8 mb-16">Ask Your Server Or Call For Daily Specials</p>
+                        <p className="text-lg font-bold italic font-serif mx-auto mt-8 mb-16 w-full text-center">Ask Your Server Or Call For Daily Specials</p>
                     </>
                 )
             case "menu":
