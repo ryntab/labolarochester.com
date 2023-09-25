@@ -81,6 +81,7 @@ const images = [
   };
 
 export default function Home() {
+<<<<<<< HEAD
     const [section, setSection2] = React.useState("specials");
 
     const setSection = (section) => {
@@ -90,6 +91,9 @@ export default function Home() {
           behavior: 'smooth' 
         });
     }
+=======
+    const [section, setSection] = React.useState("menu");
+>>>>>>> development
     
   return (
     <>
