@@ -39,7 +39,7 @@ const images = [
   };
 
 export default function Home() {
-    const [section, setSection] = React.useState("specials");
+    const [section, setSection] = React.useState("menu");
     
   return (
     <>
