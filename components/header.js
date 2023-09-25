@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import { XIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
-
-import { useEffect } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -11,18 +8,19 @@ export default function Header() {
     setMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    if (window.location.hash) {
-      const element = document.querySelector(window.location.hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, []);
+  const scrollTo = (event, location) => {
+    event.preventDefault();
+    const element = document.querySelector(location);
+    console.log(document.getElementById("navbar").offsetHeight)
+    window.scrollTo({
+      top: element.getBoundingClientRect().top + window.scrollY - (document.getElementById("navbar").offsetHeight * 2),
+      behavior: 'smooth' 
+    });
+  }
 
   return (
     <>
-      <div className="backdrop-blur border-b-2 border-slate-500 max-w-7xl w-full bg-black/50 h-16 md:h-24 flex shadow-2xl shadow-black overflow-visible fixed z-50 justify-content-between">
+      <div id="navbar" className="backdrop-blur border-b-2 border-slate-500 max-w-7xl w-full bg-black/50 h-16 md:h-24 flex shadow-2xl shadow-black overflow-visible fixed z-50 justify-content-between">
         <div className="w-1/5 sm:w-2/5 bg-gradient-to-r from-black flex items-center">
           <button className="text-white text-xl font-semibold pl-8 visible md:invisible w-auto sm:w-0" onClick={toggleMenu}>
             {isMenuOpen ? (
@@ -40,18 +38,20 @@ export default function Header() {
         </div>
         <div className="flex items-center w-1/5 sm:w-2/5 bg-gradient-to-r from-black/0 to-black">
           <div className={`space-x-4 w-full font-semibold mr-8 font-thin text-slate-100 text-right pl-4 invisible md:visible`}>
-            <Link href="/#about" onClick={toggleMenu} className="hover:border-b-2 py-1 menu">About</Link>
-            <Link href="/#contact" onClick={toggleMenu} className="hover:border-b-2 py-1 menu">Contact</Link>
-            <Link href="/#menu" onClick={toggleMenu} className="hover:border-b-2 py-1 menu">Menu</Link>
-            <Link href="/#events" onClick={toggleMenu} className="hover:border-b-2 py-1 menu">Events</Link>
+            <Link href="/#about" onClick={(e) => scrollTo(e,"#about")} className="hover:border-b-2 py-1 menu">About</Link>
+            <Link href="/#contact" onClick={(e) => scrollTo(e,"#contact")} className="hover:border-b-2 py-1 menu">Contact</Link>
+            <Link href="/#menu" onClick={(e) => scrollTo(e,"#menu")} className="hover:border-b-2 py-1 menu">Menu</Link>
+            <Link href="/#events" onClick={(e) => scrollTo(e,"#events")} className="hover:border-b-2 py-1 menu">Events</Link>
+            <Link href="/#events" onClick={(e) => scrollTo(e,"#events")} className="hover:border-b-2 py-1 menu">
+            </Link>
           </div>
         </div>
     </div>
     <div className={`fixed w-0 h-0 pl-8 space-y-8 py-8 z-40 w-full bg-black/90 border-b-2 border-slate-500 font-semibold text-slate-100 text-left ${isMenuOpen ? 'pt-24 visible h-auto dropdown-enter dropdown-enter-active' : 'invisible dropdown-exit dropdown-exit-active'} md:invisible`}>
-            <Link href="/#about" onClick={toggleMenu} className="block menu">About</Link>
-            <Link href="/#contact" onClick={toggleMenu} className="block menu">Contact</Link>
-            <Link href="/#menu" onClick={toggleMenu} className="block menu">Menu</Link>
-            <Link href="/#events" onClick={toggleMenu} className="block menu">Events</Link>
+            <Link href="/#about" onClick={(e) => scrollTo(e,"#about")}  className="block menu">About</Link>
+            <Link href="/#contact" onClick={(e) => scrollTo(e,"#contact")}  className="block menu">Contact</Link>
+            <Link href="/#menu" onClick={(e) => scrollTo(e,"#menu")}  className="block menu">Menu</Link>
+            <Link href="/#events" onClick={(e) => scrollTo(e,"#events")}  className="block menu">Events</Link>
     </div>
     </>
   );

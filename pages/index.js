@@ -50,9 +50,9 @@ const images = [
     adaptiveHeight:false,
     responsive: [
         {
-          breakpoint: 768,  // Medium-sized screens and lower
+          breakpoint: 768, 
           settings: {
-            slidesToShow: 2,  // Adjust to show 2 slides for md and lower
+            slidesToShow: 2,  
           }
         },
     ]
@@ -90,7 +90,7 @@ export default function Home() {
         <meta name="description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester." />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
     </Head>
-    <div className="bg-slate-100/50 overflow-hidden">
+    <div id="home"  className="bg-slate-100/50 overflow-hidden">
         <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-8 md:pt-24" style={{ backgroundImage: `url(/pic2.jpg)` }}>
             <div className="ml-auto w-full h-full md:full bg-gradient-to-t from-black/90 border-slate-500">
                 <div className="bg-gradient-to-r mt-24 md:w-1/2 from-black font-semibold p-4 background-blur mb-4 text-left text-white">
@@ -211,23 +211,23 @@ export default function Home() {
                 <CateringCarousel />
             </div>
         </div>
-        <div className="md:flex flex-1 text-white bg-black" id="events">
-            <div className="md:w-1/2">
-                <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={false}>
-                    <img src={"/catering.jpg"} className="object-cover w-full h-full" />
-                    <img src={"/catering3.jpg"} className="object-cover w-full h-full" />
-                    <img src={"/food.jpg"} className="object-cover w-full h-full" />
+        <div className="md:flex text-white bg-black" id="events">
+            <div className="w-1/2">
+                <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
+                <img src={"/catering.jpg"} className="object-cover w-full h-full" alt="Catering 1" />
+                <img src={"/catering3.jpg"} className="object-cover w-full h-full" alt="Catering 2" />
                 </Slider>
             </div>
-            <div className="md:w-1/2 p-6 order-first md:order-last">
-                <h1 className="font-bold text-2xl font-serif"> Catered By La Bola <br/> <i className="font-thin text-xl">Our Menu, Your Venue</i></h1>
+            <div className="w-1/2 p-6 order-first md:order-last">
+                <h1 className="font-bold text-2xl font-serif mb-4">Catered By La Bola</h1>
+                <i className="font-thin text-xl block mb-4">Our Menu, Your Venue</i>
                 <p className="mt-4">
                 Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
                 </p>
-                <div className="w-full p-4 text-right">
-                    <Link href="/bookAnEvent" className="bg-white text-black font-semibold mx-auto py-2 inline-block px-4">
-                        Catering Inquiry
-                    </Link>
+                <div className="mt-8 text-right">
+                <Link href="/bookAnEvent" className="bg-white text-black font-semibold py-2 px-4">
+                    Catering Inquiry
+                </Link>
                 </div>
             </div>
         </div>
