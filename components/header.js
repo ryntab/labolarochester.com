@@ -11,6 +11,7 @@ export default function Header() {
   };
 
   const scrollTo = (event, location) => {
+    toggleMenu();
     event.preventDefault();
     const element = document.querySelector(location);
     console.log(document.getElementById("navbar").offsetHeight)
@@ -22,8 +23,8 @@ export default function Header() {
 
   return (
     <>
-      <div id="navbar" className="backdrop-blur border-b-2 border-slate-500 max-w-7xl w-full bg-black/50 h-16 md:h-24 flex shadow-2xl shadow-black overflow-visible fixed z-50 justify-content-between">
-        <div className="w-1/5 sm:w-2/5 bg-gradient-to-r from-black flex items-center">
+      <div id="navbar" className="backdrop-blur border-b-2 border-slate-500 max-w-7xl w-full bg-black/75 h-16 md:h-24 flex shadow-2xl shadow-black overflow-visible fixed z-50 justify-content-between">
+        <div className="w-1/5 sm:w-2/5 bg-gradient-to-r from-slate-900 flex items-center">
         <button className="text-white text-xl font-semibold pl-8 visible md:invisible w-auto sm:w-0" onClick={toggleMenu}>
   {isMenuOpen ? (
     <XIcon className="h-6 w-6" />
