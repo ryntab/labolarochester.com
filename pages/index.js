@@ -220,13 +220,13 @@ export default function Home() {
             </div>
         </div>
         <div className="md:flex text-white bg-black" id="events">
-            <div className="w-1/2">
+            <div className="md:w-1/2">
                 <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
                 <img src={"/catering.jpg"} className="object-cover w-full h-full" alt="Catering 1" />
                 <img src={"/catering3.jpg"} className="object-cover w-full h-full" alt="Catering 2" />
                 </Slider>
             </div>
-            <div className="w-1/2 p-6 order-first md:order-last">
+            <div className="md:w-1/2 p-6 order-first md:order-last">
                 <h1 className="font-bold text-2xl font-serif mb-4">Catered By La Bola</h1>
                 <i className="font-thin text-xl block mb-4">Our Menu, Your Venue</i>
                 <p className="mt-4">
