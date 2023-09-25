@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
+import { XIcon, MenuIcon } from '@heroicons/react/outline';
+
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -22,13 +24,13 @@ export default function Header() {
     <>
       <div id="navbar" className="backdrop-blur border-b-2 border-slate-500 max-w-7xl w-full bg-black/50 h-16 md:h-24 flex shadow-2xl shadow-black overflow-visible fixed z-50 justify-content-between">
         <div className="w-1/5 sm:w-2/5 bg-gradient-to-r from-black flex items-center">
-          <button className="text-white text-xl font-semibold pl-8 visible md:invisible w-auto sm:w-0" onClick={toggleMenu}>
-            {isMenuOpen ? (
-              <i class="fas fa-close"></i>
-            ) : (
-              <i class="fas fa-bars"></i>
-            )}
-          </button>
+        <button className="text-white text-xl font-semibold pl-8 visible md:invisible w-auto sm:w-0" onClick={toggleMenu}>
+  {isMenuOpen ? (
+    <XIcon className="h-6 w-6" />
+  ) : (
+    <MenuIcon className="h-6 w-6" />
+  )}
+</button>
           <a className="hidden md:block" href="https://www.avvinorochester.com/">
             <img src="./avvino.png" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
           </a>
