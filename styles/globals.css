@@ -85,6 +85,17 @@ h1, h2, h3, h4, h5, h6 {
     display: none !important;
   }
 
-  .menu {
-    font-family: 'Playfair Display', serif;
+  .slick-slide {
+    height: auto !important;
+  }
+  
+  .slick-track {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+  }
+  
+  .slick-slide > div {
+    height: 100%;
   }

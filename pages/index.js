@@ -81,7 +81,15 @@ const images = [
   };
 
 export default function Home() {
-    const [section, setSection] = React.useState("specials");
+    const [section, setSection2] = React.useState("specials");
+
+    const setSection = (section) => {
+        setSection2(section);
+        window.scrollTo({
+          top: document.getElementById("menu").getBoundingClientRect().top + window.scrollY - (document.getElementById("navbar").offsetHeight * 2),
+          behavior: 'smooth' 
+        });
+    }
     
   return (
     <>
@@ -124,13 +132,13 @@ export default function Home() {
         </div>
         <div className="w-full text-white backdrop-blur p-0 border-slate-500 border-y-2 overflow-hidden">
             <Slider {...settings}>
-                <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/pic4.jpg" alt="Image 1" />
-                <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/ryan.jpg" alt="Image 2" />
-                <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/pic3.jpg" alt="Image 3" />
-                <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/bread.jpg" alt="Image 4" />
-                <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/burger.jpg" alt="Image 5" />
-                <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/jordan.jpg" alt="Image 6" />
-                <Image width="1024" height="1024" className="h-full w-1/3 object-cover" src="/food2.jpg" alt="Image 7" />
+                <Image width="1024" height="1024" className="h-full  object-cover" src="/pic4.jpg" alt="Image 1" />
+                <Image width="1024" height="1024" className="h-full  object-cover" src="/ryan.jpg" alt="Image 2" />
+                <Image width="1024" height="1024" className="h-full  object-cover" src="/pic3.jpg" alt="Image 3" />
+                <Image width="1024" height="1024" className="h-full  object-cover" src="/bread.jpg" alt="Image 4" />
+                <Image width="1024" height="1024" className="h-full  object-cover" src="/burger.jpg" alt="Image 5" />
+                <Image width="1024" height="1024" className="h-full  object-cover" src="/jordan.jpg" alt="Image 6" />
+                <Image width="1024" height="1024" className="h-full  object-cover" src="/food2.jpg" alt="Image 7" />
             </Slider>
         </div>
         <div className="w-full" id="menu">
