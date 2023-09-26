@@ -33,11 +33,11 @@ export default function Header() {
   )}
 </button>
           <a className="hidden md:block" href="https://www.avvinorochester.com/">
-            <img src="./avvino.png" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
+            <img src="./avvino.png" alt="Avvino Logo" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
           </a>
         </div>
         <div className="w-32 min-w-32 md:h-48 h-32 border-2 mx-auto md:w-48 backdrop-blur -mt-2 bg-black/100 border-slate-500 rounded-b-full shadow-2xl shadow-black ">
-            <img src="/logo.png" className="object-cover md:mt-8 mt-4 w-20 md:w-32 relative mx-auto overflow-visible"></img>
+            <img alt="La Bola Logo" src="/logo.png" className="object-cover md:mt-8 mt-4 w-20 md:w-32 relative mx-auto overflow-visible"></img>
         </div>
         <div className="flex items-center w-1/5 sm:w-2/5 bg-gradient-to-r from-black/0 to-black">
           <div className={`space-x-4 w-full font-semibold mr-8 font-thin text-slate-100 text-right pl-4 invisible md:visible`}>
