@@ -31,12 +31,12 @@ const structuredData = {
 import Menu from '@/components/menu';
 
 const images = [
-    'event.jpg',
-    'event2.jpg',
-    'event3.jpg',
-    "catering2.jpg",
-    'topdown.jpg',
-    'bar.jpg'
+    '/event.jpg',
+    '/event2.jpg',
+    '/event3.jpg',
+    "/catering2.jpg",
+    '/topdown.jpg',
+    '/bar.jpg'
   ];
 
   const settings = {
@@ -73,7 +73,7 @@ const images = [
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="-mb-2">
-            <img src={image} alt={`Catering Image ${index + 1}`} className="object-cover w-full h-full" />
+            <Image width={1080} height={720} src={image} alt={`Various Images showing a number of spaces available for hosting events: Image ${index + 1}`} className="object-cover w-full h-full" />
           </div>
         ))}
       </Slider>
@@ -81,8 +81,7 @@ const images = [
   };
 
 export default function Home() {
-<<<<<<< HEAD
-    const [section, setSection2] = React.useState("specials");
+    const [section, setSection2] = React.useState("menu");
 
     const setSection = (section) => {
         setSection2(section);
@@ -91,9 +90,6 @@ export default function Home() {
           behavior: 'smooth' 
         });
     }
-=======
-    const [section, setSection] = React.useState("menu");
->>>>>>> development
     
   return (
     <>
@@ -117,7 +113,7 @@ export default function Home() {
                 </div>
                 <div className="bg-gradient-to-r md:w-1/2 from-black font-semibold p-4 background-blur mb-4 text-left text-white">
                     <h6>
-                        Located in the heart of downtown Rochester at the <span className="font-bold">Mercantile on Main</span>
+                        Located at the <span className="font-bold">Mercantile on Main</span>
                     </h6>
                 </div>
                 <div className="bg-gradient-to-l md:w-1/2 ml-auto from-black font-semibold p-4 background-blur font-bold text-right text-white">
@@ -128,7 +124,7 @@ export default function Home() {
                 <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-8">
                     <Link href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="hover:bg-white/75 bg-white/90 my-8 text-black font-semibold border-2 border-black/50 inline-block py-2 px-8 hover:bg-opacity-80 focus:bg-opacity-80">
                         <h6>
-                            Order Now
+                            Order Online
                         </h6>
                     </Link>
                 </div>
@@ -136,13 +132,13 @@ export default function Home() {
         </div>
         <div className="w-full text-white backdrop-blur p-0 border-slate-500 border-y-2 overflow-hidden">
             <Slider {...settings}>
-                <Image width="1024" height="1024" className="h-full  object-cover" src="/pic4.jpg" alt="Image 1" />
-                <Image width="1024" height="1024" className="h-full  object-cover" src="/ryan.jpg" alt="Image 2" />
-                <Image width="1024" height="1024" className="h-full  object-cover" src="/pic3.jpg" alt="Image 3" />
-                <Image width="1024" height="1024" className="h-full  object-cover" src="/bread.jpg" alt="Image 4" />
-                <Image width="1024" height="1024" className="h-full  object-cover" src="/burger.jpg" alt="Image 5" />
-                <Image width="1024" height="1024" className="h-full  object-cover" src="/jordan.jpg" alt="Image 6" />
-                <Image width="1024" height="1024" className="h-full  object-cover" src="/food2.jpg" alt="Image 7" />
+                <Image width="512" height="512" className="h-full  object-cover" src="/pic4.jpg" alt="Short Rib with Patatas Bravas"/>
+                <Image width="512" height="512" className="h-full  object-cover" src="/ryan.jpg" alt="Full Service Bar" />
+                <Image width="512" height="512" className="h-full  object-cover" src="/pic3.jpg" alt="Cocktail" />
+                <Image width="512" height="512" className="h-full  object-cover" src="/bread.jpg" alt="Pan De Tomate" />
+                <Image width="512" height="512" className="h-full  object-cover" src="/burger.jpg" alt="Bola Burger" />
+                <Image width="512" height="512" className="h-full  object-cover" src="/jordan.jpg" alt="Bartender Holding Cocktail" />
+                <Image width="512" height="512" className="h-full  object-cover" src="/food2.jpg" alt="Ceasar Salad With Chicken" />
             </Slider>
         </div>
         <div className="w-full" id="menu">
@@ -159,20 +155,20 @@ export default function Home() {
         </div>
         <div className="bg-[#07403F] md:flex" id="about">
             <div className="md:w-1/2 bg-black">
-                <img src="gusbus.png" className="object-cover w-full h-full"></img>
+                <Image width={1024} height={1024} src="/gusbus.png" className="object-cover w-full h-full" alt="Head Chef Gus"/>
             </div>
             <div className="md:w-2/4 w-full flex">
                 <div className="text-white font-serif">
                     <h1 className="font-bold text-2xl text-white font-serif m-6"> Discover La Bola</h1>
                     <p className="text-white mx-6 mb-6">
-                        <i>Your Mediterranean Culinary Haven in Downtown Rochester. </i> We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. Can&apos;t wait to share our love for food with you!
+                        <i>Your Mediterranean Culinary Haven in Downtown Rochester. </i> We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. We Can&apos;t wait to share our love for food with you!
                     </p>
                     <div className="ml-6">
                         <div className="border-none mt-10">
                             <h1 className="text-lg font-bold mb-2" id="contact"> Contact Us</h1>
                             <p>
                             <b>Email:</b>{" "}
-                            <a href="mailto:contact@labolarochester.com" className="text-blue-200">
+                            <a href="mailto:contact@labolarochester.com" className="text-blue-200 my-4 inline-block">
                                 contact@labolarochester.com
                             </a>
                             </p>
@@ -226,8 +222,8 @@ export default function Home() {
         <div className="md:flex text-white bg-black" id="events">
             <div className="md:w-1/2">
                 <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
-                <img src={"/catering.jpg"} className="object-cover w-full h-full" alt="Catering 1" />
-                <img src={"/catering3.jpg"} className="object-cover w-full h-full" alt="Catering 2" />
+                    <Image width={1080} height={720} src={"/catering.jpg"} className="object-cover w-full h-full" alt="A display of roasted beets, goat cheese, and charred carrots and lebneh"/>
+                    <Image width={1080} height={720} src={"/catering3.jpg"} className="object-cover w-full h-full" alt="A display of charcuterie, meats and cheeses" />
                 </Slider>
             </div>
             <div className="md:w-1/2 p-6 order-first md:order-last">
@@ -245,10 +241,10 @@ export default function Home() {
         </div>
         <div className="bg-slate-900/90 p-6 md:flex justify-left">
             <a className="block text-center" href="https://avvinorochester.com">
-                <img src="./avvino.png" className="mb-4 px-4 py-2 rounded object-fit" />
+                <Image width={1024} height={1024} alt="Logo For Avvino, Text surrounded by curly frills" src="/avvino.png" className="mb-4 px-4 py-2 rounded object-fit" />
             </a>
             <div className="">
-                <h3 className='font-bold text-lg text-white font-serif ml-6 mb-2 mt-0'> From Avvino To La Bola</h3>
+                <h1 className='font-bold text-lg text-white font-serif ml-6 mb-2 mt-0'> From Avvino To La Bola</h1>
                 <p className="text-white mx-6 mb-6 text-sm font-serif mt-2">
                     La Bola is a proud offspring of Avvino, our original and highly acclaimed restaurant. Avvino, renowned for its exceptional dining experience and rich culinary heritage, has been a cornerstone of our community for many years. As we continue to evolve and innovate, we decided to introduce La Bola, a new venture that carries forward Avvino&apos;s legacy while embracing the vibrant flavors of Spain and the Mediterranean. La Bola promises to enchant your taste buds with an array of delightful dishes, inspired by the same passion and expertise that originated at Avvino.
                 </p>
