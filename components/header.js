@@ -32,7 +32,7 @@ export default function Header() {
     <MenuIcon className="h-6 w-6" />
   )}
 </button>
-          <a className="hidden md:block" href="https://www.avvinorochester.com/">
+          <a aria-label="Go to Avvino" className="hidden md:block" href="https://www.avvinorochester.com/">
             <img src="./avvino.png" alt="Avvino Logo" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
           </a>
         </div>
