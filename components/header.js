@@ -36,7 +36,7 @@ export default function Header() {
   )}
 </button>
           <a aria-label="Go to Avvino" className="hidden md:block" href="https://www.avvinorochester.com/">
-            <Image width={128} height={128} src="./avvino.png" alt="Avvino Logo" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
+            <Image width={128} height={128} src="/avvino.png" alt="Avvino Logo" className="h-12 w-0 sm:w-auto object-fit mx-8 invisible md:visible" />
           </a>
         </div>
         <div className="w-32 min-w-32 md:h-48 h-32 border-2 mx-auto md:w-48 backdrop-blur -mt-2 bg-black/100 border-slate-500 rounded-b-full shadow-2xl shadow-black ">
