@@ -161,7 +161,7 @@ export default function Home() {
                 <div className="text-white font-serif">
                     <h1 className="font-bold text-2xl text-white font-serif m-6"> Discover La Bola</h1>
                     <p className="text-white mx-6 mb-6">
-                        <i>Your Mediterranean Culinary Haven in Downtown Rochester. </i> We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. We Can&apos;t wait to share our love for food with you!
+                        <i>Your Mediterranean Culinary Haven in Downtown Rochester. </i> We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. We can&apos;t wait to share our love for food with you!
                     </p>
                     <div className="ml-6">
                         <div className="border-none mt-10">
