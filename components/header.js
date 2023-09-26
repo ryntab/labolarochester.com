@@ -3,6 +3,9 @@ import Link from 'next/link';
 
 import { XIcon, MenuIcon } from '@heroicons/react/outline';
 
+
+import Image from 'next/image';
+
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
