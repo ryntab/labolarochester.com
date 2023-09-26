@@ -227,8 +227,8 @@ export default function Home() {
                 </Slider>
             </div>
             <div className="md:w-1/2 p-6 order-first md:order-last">
-                <h1 className="font-bold text-2xl font-serif mb-4">Catered By La Bola</h1>
-                <i className="font-thin text-xl block mb-4">Our Menu, Your Venue</i>
+                <h1 className="font-bold text-2xl font-serif">Catered By La Bola</h1>
+                <i className="font-thin text-xl block">Our Menu, Your Venue</i>
                 <p className="mt-4">
                 Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
                 </p>
