@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 
-import { useRouter } from 'next/router';
-
-const router = useRouter();
-
 import Link from 'next/link';
 
 const Book = () => {
@@ -40,14 +36,13 @@ const Book = () => {
         },
         body: JSON.stringify(formData)
       });
-      router.push('/');
 
 
       if (response.ok) {
         alert('Event booking request submitted successfully.');
+        window.location.href = '/';
       } else {
         alert('Failed to submit event booking request.');
-        router.push('/bookAnEvent');
       }
     } catch (error) {
       console.error('Error submitting event booking request:', error);
