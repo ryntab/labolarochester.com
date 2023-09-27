@@ -10,23 +10,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const structuredData = {
-    "@context": "http://schema.org",
-    "@type": "Restaurant",
-    "name": "La Bola",
-    "description": "Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar in downtown Rochester.",
-    "url": "https://labolarochester.com",
-    "image": "https://labolarochester.com/logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "240 East Main St.",
-      "addressLocality": "Rochester",
-      "addressRegion": "NY",
-      "postalCode": "14604"
-    },
-    "telephone": "(585) 434-0044"
-};
-
 
 import Menu from '@/components/menu';
 
@@ -96,7 +79,6 @@ export default function Home() {
     <Head>
         <title>La Bola by Avvino</title>
         <meta name="description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester." />
-        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
     </Head>
     <div id="home"  className="bg-slate-100/50 overflow-hidden">
         <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-8 md:pt-24" style={{ backgroundImage: `url(/pic2.jpg)` }}>
