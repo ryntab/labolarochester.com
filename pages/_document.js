@@ -9,6 +9,11 @@ class MyDocument extends Document {
       "description":"Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar in downtown Rochester.",
       "url":"https://labolarochester.com",
       "image":"https://labolarochester.com/logo.png",
+      "priceRange": "$$",
+      "servesCuisine": "Spanish, Mediterranean",
+      "openingHours": "Mo-Fri 11:30-20:00",
+      "acceptsReservations": true,
+      "menu": "https://labolarochester.com/#menu",
       "address":{
          "@type":"PostalAddress",
          "streetAddress":"240 East Main St.",
@@ -16,7 +21,8 @@ class MyDocument extends Document {
          "addressRegion":"NY",
          "postalCode":"14604"
       },
-      "telephone":"(585) 434-0044"
+      "telephone":"(585) 434-0044",
+      "sameAs": ["https://www.instagram.com/labolarochester", "https://avvinorochester.com/labola"]
    };
 
     const scriptText = JSON.stringify(structuredData, null, 2);
@@ -34,9 +40,9 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
           <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: ` ${JSON.stringify(structuredData, null, 2)}` }}
-/>
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: ` ${JSON.stringify(structuredData, null, 2)}` }}
+          />
         </Head>
         <body className="relative bg-[url(/bg2.jpg)] backdrop-filter bg-fixed bg-cover">
           <div className="absolute inset-0 opacity-100 z-[-1] bg-fixed bg-gradient-to-t from-black"></div>
