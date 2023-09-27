@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import { useRouter } from 'next/router';
 
+const router = useRouter();
+
 import Link from 'next/link';
 
 const Book = () => {
@@ -31,7 +33,6 @@ const Book = () => {
     };
 
     try {
-      router.push('/');
       const response = await fetch('/api/bookEvent', {
         method: 'POST',
         headers: {
@@ -39,6 +40,7 @@ const Book = () => {
         },
         body: JSON.stringify(formData)
       });
+      router.push('/');
 
 
       if (response.ok) {
