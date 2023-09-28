@@ -10,6 +10,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+
 
 import Menu from '@/components/menu';
 
@@ -40,6 +42,195 @@ const images = [
         },
     ]
   };
+
+  
+  const darkMapStyle = 
+  [
+      {
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#212121"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#212121"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.country",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#bdbdbd"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#181818"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#1b1b1b"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#2c2c2c"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#8a8a8a"
+          }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#373737"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#3c3c3c"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway.controlled_access",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#4e4e4e"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#000000"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#3d3d3d"
+          }
+        ]
+      }
+    ];
   
   const CateringCarousel = () => {
     const settings = {
@@ -135,49 +326,63 @@ export default function Home() {
                 <Menu tab={section}/>
             </div>
         </div>
-        <div className="bg-[#07403F] md:flex" id="about">
-            <div className="md:w-1/2 bg-black">
+        <div className="bg-[#07403F] lg:flex" id="about">
+            <div className="lg:w-1/2 bg-black">
                 <Image width={1024} height={1024} src="/gusbus.png" className="object-cover w-full h-full" alt="Head Chef Gus"/>
             </div>
-            <div className="md:w-2/4 w-full flex">
+            <div className="lg:w-2/4 w-full flex">
                 <div className="text-white font-serif">
                     <h1 className="font-bold text-2xl text-white font-serif m-6"> Discover La Bola</h1>
-                    <p className="text-white mx-6 mb-6">
+                    <p className="text-white mx-6 my-4">
                         <i>Your Mediterranean Culinary Haven in Downtown Rochester. </i> We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. We can&apos;t wait to share our love for food with you!
                     </p>
-                    <div className="ml-6">
-                        <div className="border-none mt-10">
-                            <h1 className="text-lg font-bold mb-2" id="contact"> Contact Us</h1>
-                            <p>
-                            <b>Email:</b>{" "}
-                            <a href="mailto:contact@labolarochester.com" className="text-blue-200 my-4 inline-block">
-                                contact@labolarochester.com
-                            </a>
-                            </p>
-                            <p>
-                            <b>Phone:</b>{" "}
-                            <a href="tel:5854340044" className="text-blue-200">
-                                (585) 434-0044
-                            </a>
-                            </p>
-                        </div> 
-                        <div className="">
-                            <h1 className="text-lg font-bold mb-2 mt-10"> Visit Us</h1>
-                            <div className="flex">
-                                <div>
-                                    <b> Hours </b>
-                                    <p>Mon-Fri <br/><i>11:30am - 8:00pm</i></p>
-                                    <p>Sat-Sun</p>
-                                    <p className="italic">Private Events Only</p>
-                                    <br/>
+                    <div className="lg:flex">
+                        <div className="lg:w-1/2 px-6">
+                            <div className="w-full">
+                                <div className="border-none">
+                                    <h1 className="text-lg font-bold pb-2 border-b-2 mb-2" id="contact"> Contact Us</h1>
+                                    <p>
+                                    <b className="text-lg">Email:</b>{" "}
+                                    <a href="mailto:contact@labolarochester.com" className="text-blue-200 inline-block">
+                                        contact@labolarochester.com
+                                    </a>
+                                    </p>
+                                    <p>
+                                    <b className="text-lg">Phone:</b>{" "}
+                                    <a href="tel:5854340044" className="text-blue-200">
+                                        (585) 434-0044
+                                    </a>
+                                    </p>
                                 </div>
-                                <div className="ml-6">
-                                    <b>Location</b>
-                                    <p>240 East Main St.</p>
-                                    <p>Rochester, NY 14604</p>
+                            </div> 
+                            <div className="w-full pt-4">
+                                <h1 className="text-lg font-bold mb-2 border-b-2 pb-2"> Visit Us</h1>
+                                <div className='flex lg:block justify-between'>
+                                    <div className=""> 
+                                        <p><b className="text-lg">Mon-Fri</b><br/><i>- 11:30am - 8:00pm</i></p>
+                                        <b className='text-lg'>Sat-Sun</b>
+                                        <p className="italic">- Private Events Only</p>
+                                        <br/>
+                                    </div>
+                                    <div className="pb-6">
+                                        <p><b className="text-lg">Location</b></p>
+                                        <i>Mercantile On Main</i>
+                                        <p>240 East Main St.</p>
+                                        <p>Rochester, NY 14604</p>
+                                    </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div> 
+                            </div> 
+                        <div className="lg:w-1/2 w-full h-[50vh] lg:h-auto lg:px-0 border-slate-500 border-b-4 lg:border-b-0">
+                        <iframe
+                            className='map'
+                            width="100%"
+                            height="100%"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.MAPS_API_KEY}&q=La+Bola+Rochester`}
+                            allowfullscreen
+                        ></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -188,7 +393,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 p-6 flex-1">
                 <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin text-xl">Our Venue, Your Vision</i></h1>
-                <p className="mt-4">
+                <p className="m-4">
                 Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
                 <div className="w-full text-right">

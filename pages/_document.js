@@ -54,6 +54,7 @@ class MyDocument extends Document {
           `,
           }}
           />
+        <link rel="stylesheet" href="./style.css"/>
         </Head>
         <body className="relative bg-[url(/bg2.jpg)] backdrop-filter bg-fixed bg-cover">
           <div className="absolute inset-0 opacity-100 z-[-1] bg-fixed bg-gradient-to-t from-black"></div>

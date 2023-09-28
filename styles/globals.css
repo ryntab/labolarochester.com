@@ -99,3 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   .slick-slide > div {
     height: 100%;
   }
+
+  .map{
+    filter: grayscale(100%) invert(100%) contrast(100%);
+  }
