@@ -48,8 +48,6 @@ export default function Header() {
             <Link href="/#contact" onClick={(e) => scrollTo(e,"#contact")} className="hover:border-b-2 py-1 menu">Contact</Link>
             <Link href="/#menu" onClick={(e) => scrollTo(e,"#menu")} className="hover:border-b-2 py-1 menu">Menu</Link>
             <Link href="/#events" onClick={(e) => scrollTo(e,"#events")} className="hover:border-b-2 py-1 menu">Events</Link>
-            <Link href="/#events" onClick={(e) => scrollTo(e,"#events")} className="hover:border-b-2 py-1 menu">
-            </Link>
           </div>
         </div>
     </div>
