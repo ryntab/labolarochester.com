@@ -127,11 +127,11 @@ export default function Home() {
         </div>
         <div className="w-full" id="menu">
             <div className="bg-black text-center text-white p-0 font-serif text-xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
-                <h1 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Specials</h1>
-                <h1 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Food </h1>
-                <h1 onClick={() => setSection("cocktails")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Cocktails</h1>
-                <h1 onClick={() => setSection("wine")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Wine </h1>
-                <h1 onClick={() => setSection("beer")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Other Beverages </h1>
+                <h2 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Specials</h2>
+                <h2 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Food </h2>
+                <h2 onClick={() => setSection("cocktails")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Cocktails</h2>
+                <h2 onClick={() => setSection("wine")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Wine </h2>
+                <h2 onClick={() => setSection("beer")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Other Beverages </h2>
             </div>
             <div className="text-slate-900 backdrop-blur bg-stone-100/50 bg-cover text-slate-800 lg:flex p-4 pt-16 lg:justify-center">
                 <Menu tab={section}/>
@@ -151,7 +151,7 @@ export default function Home() {
                         <div className="lg:w-1/2 px-6">
                             <div className="w-full">
                                 <div className="border-none">
-                                    <h1 className="text-lg font-bold pb-2 border-b-2 mb-2" id="contact"> Contact Us</h1>
+                                    <h2 className="text-lg font-bold pb-2 border-b-2 mb-2" id="contact"> Contact Us</h2>
                                     <p>
                                     <b className="text-lg">Email:</b>{" "}
                                     <a href="mailto:contact@labolarochester.com" className="text-blue-200 inline-block">
@@ -167,7 +167,7 @@ export default function Home() {
                                 </div>
                             </div> 
                             <div className="w-full pt-4">
-                                <h1 className="text-lg font-bold mb-2 border-b-2 pb-2"> Visit Us</h1>
+                                <h2 className="text-lg font-bold mb-2 border-b-2 pb-2"> Visit Us</h2>
                                 <div className='flex lg:block justify-between'>
                                     <div className=""> 
                                         <p><b className="text-lg">Mon-Fri</b><br/><i>- 11:30am - 8:00pm</i></p>
@@ -204,7 +204,7 @@ export default function Home() {
                 <CateringCarousel />
             </div>
             <div className="md:w-1/2 p-6 flex-1">
-                <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin text-xl">Our Venue, Your Vision</i></h1>
+                <h2 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin text-xl">Our Venue, Your Vision</i></h2>
                 <p className="mt-4">
                 Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
@@ -226,7 +226,7 @@ export default function Home() {
                 </Slider>
             </div>
             <div className="md:w-1/2 p-6 order-first md:order-last">
-                <h1 className="font-bold text-2xl font-serif">Catered By La Bola</h1>
+                <h2 className="font-bold text-2xl font-serif">Catered By La Bola</h2>
                 <i className="font-thin text-xl block">Our Menu, Your Venue</i>
                 <p className="mt-4">
                 Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
@@ -243,7 +243,7 @@ export default function Home() {
                 <Image width={1024} height={1024} alt="Logo For Avvino, Text surrounded by curly frills" src="/avvino.png" className="mb-4 px-4 py-2 rounded object-fit" />
             </a>
             <div className="">
-                <h1 className='font-bold text-lg text-white font-serif ml-6 mb-2 mt-0'> From Avvino To La Bola</h1>
+                <h2 className='font-bold text-lg text-white font-serif ml-6 mb-2 mt-0'> From Avvino To La Bola</h2>
                 <p className="text-white mx-6 mb-6 text-sm font-serif mt-2">
                     La Bola is a proud offspring of Avvino, our original and highly acclaimed restaurant. Avvino, renowned for its exceptional dining experience and rich culinary heritage, has been a cornerstone of our community for many years. As we continue to evolve and innovate, we decided to introduce La Bola, a new venture that carries forward Avvino&apos;s legacy while embracing the vibrant flavors of Spain and the Mediterranean. La Bola promises to enchant your taste buds with an array of delightful dishes, inspired by the same passion and expertise that originated at Avvino.
                 </p>
