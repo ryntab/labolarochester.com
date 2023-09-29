@@ -186,13 +186,14 @@ export default function Home() {
                             </div> 
                         <div className="lg:w-1/2 w-full h-[50vh] lg:h-auto lg:px-0 border-slate-500 border-b-4 lg:border-b-0">
                         <iframe
+                            title="An interactive map for showing La Bola's location downtown"
                             className='map'
                             width="100%"
                             height="100%"
                             referrerpolicy="no-referrer-when-downgrade"
                             src={`https://www.google.com/maps/embed/v1/place?key=${process.env.MAPS_API_KEY}&q=La+Bola+Rochester`}
                             allowfullscreen
-                        ></iframe>
+                        >We attempted to load an interactive map here, but your browser is unsupported</iframe>
                         </div>
                     </div>
                 </div>
@@ -204,7 +205,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 p-6 flex-1">
                 <h1 className="font-bold text-2xl font-serif"> Tailored Events at La Bola <br/> <i className="font-thin text-xl">Our Venue, Your Vision</i></h1>
-                <p className="m-4">
+                <p className="mt-4">
                 Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
                 <div className="w-full text-right">
