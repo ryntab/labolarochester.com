@@ -43,17 +43,7 @@ class MyDocument extends Document {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: ` ${JSON.stringify(structuredData, null, 2)}` }}
           />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-9908RT5BYN"></script>
-          <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9908RT5BYN');
-          `,
-          }}
-          />
+          <script async src="https://analytics.eu.umami.is/script.js" data-website-id="e451e89e-dc47-49b2-99dd-8b7418b4726d"></script>
         </Head>
         <body className="relative bg-[url(/bg2.jpg)] backdrop-filter bg-fixed bg-cover">
           <div className="absolute inset-0 opacity-100 z-[-1] bg-fixed bg-gradient-to-t from-black"></div>
