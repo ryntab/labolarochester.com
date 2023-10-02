@@ -70,12 +70,16 @@ export default function Home() {
 
     const setSection = (section) => {
         setSection2(section);
-        window.scrollTo({
-          top: document.getElementById("menu").getBoundingClientRect().top + window.scrollY - (document.getElementById("navbar").offsetHeight * 2),
-          behavior: 'smooth' 
-        });
+        scrollToMenu();
     }
-    
+
+    const scrollToMenu = () => {
+        window.scrollTo({
+            top: document.getElementById("menu").getBoundingClientRect().top + window.scrollY - (document.getElementById("navbar").offsetHeight * 2),
+            behavior: 'smooth' 
+          });
+    } 
+
   return (
     <>
     <Head>
@@ -106,11 +110,11 @@ export default function Home() {
                     </h6>
                 </div>
                 <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-8">
-                    <Link href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="hover:bg-white/75 bg-white/90 my-8 text-black font-semibold border-2 border-black/50 inline-block py-2 px-8 hover:bg-opacity-80 focus:bg-opacity-80">
+                    <span onClick={scrollToMenu} className="hover:bg-white/75 bg-white/90 my-8 text-black font-semibold border-2 border-black/50 inline-block py-2 px-8 hover:bg-opacity-80 focus:bg-opacity-80">
                         <h6>
-                            Order Online
+                            View Menu
                         </h6>
-                    </Link>
+                    </span>
                 </div>
             </div>
         </div>
@@ -126,6 +130,10 @@ export default function Home() {
             </Slider>
         </div>
         <div className="w-full" id="menu">
+            <div className="w-full text-white p-4 bg-white/75 md:flex md:justify-end justify-center md:justify-start">
+                <h3 className='text-xl text-black md:mr-4 pt-2 text-center pb-4 md:pb-0'> Available for delivery and pickup!</h3>
+                <a href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="font-semibold md:font-normal bg-slate-900 font-serif text-xl px-4 p-2 mx-auto md:mx-0 inline-block text-center w-full md:w-auto"> Order Online</a>
+            </div>
             <div className="bg-black text-center text-white p-0 font-serif text-xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
                 <h2 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Specials</h2>
                 <h2 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Food </h2>
