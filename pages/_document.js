@@ -44,14 +44,14 @@ class MyDocument extends Document {
           <meta property="og:type" content="website"/>
           <meta property="og:title" content="La Bola By AVVINO"/>
           <meta property="og:description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar in downtown Rochester."/>
-          <meta property="og:image" content="/pic2.jpg"/>
+          <meta property="og:image" content="https://labolarochester.com/pic2.jpg"/>
 
           <meta name="twitter:card" content="summary_large_image"/>
           <meta property="twitter:domain" content="labolarochester.com"/>
           <meta property="twitter:url" content="https://labolarochester.com"/>
           <meta name="twitter:title" content="La Bola By AVVINO"/>
           <meta name="twitter:description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar in downtown Rochester."/>
-          <meta name="twitter:image" content="/pic2.jpg"/>
+          <meta name="twitter:image" content="https://labolarochester.com/pic2.jpg"/>
 
           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
           <script
