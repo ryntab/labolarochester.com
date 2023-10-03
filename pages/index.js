@@ -83,7 +83,7 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title>La Bola by Avvino</title>
+        <title>La Bola | Rochester, NY&apos;s Favorite Lunch and Dinner Spot | Cocktails, Wine Bar, Tapas</title>
         <meta name="description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester." />
     </Head>
     <div id="home"  className="bg-slate-100/50 overflow-hidden">
