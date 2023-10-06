@@ -110,7 +110,7 @@ export default function Home() {
                     </h6>
                 </div>
                 <div className="text-center background-blur font-black text-white w-full mx-auto mt-4 mb-8">
-                    <span onClick={scrollToMenu} className="hover:bg-white/75 bg-white/90 my-8 text-black font-semibold border-2 border-black/50 inline-block py-2 px-8 hover:bg-opacity-80 focus:bg-opacity-80">
+                    <span onClick={scrollToMenu} className="hover:cursor-pointer hover:bg-white/75 bg-white/90 my-8 text-black font-semibold border-2 border-black/50 inline-block py-2 px-8 hover:bg-opacity-80 focus:bg-opacity-80">
                         <h6>
                             View Menu
                         </h6>
