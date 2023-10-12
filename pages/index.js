@@ -199,9 +199,9 @@ export default function Home() {
                             className='map'
                             width="100%"
                             height="100%"
-                            referrerpolicy="no-referrer-when-downgrade"
+                            referrerPolicy="no-referrer-when-downgrade"
                             src={`https://www.google.com/maps/embed/v1/place?key=${process.env.MAPS_API_KEY}&q=La+Bola+Rochester`}
-                            allowfullscreen
+                            allowFullscreen
                         >We attempted to load an interactive map here, but your browser is unsupported</iframe>
                         </div>
                     </div>
@@ -258,7 +258,6 @@ export default function Home() {
                 </p>
             </div>
         </div>
-        <Footer/>
     </div>
     </>
   )
