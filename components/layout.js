@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from './header';
 
 import { Analytics } from '@vercel/analytics/react';
+import Footer from './footer';
 
 export default function Layout({ children }) {
   return (
@@ -14,6 +15,7 @@ export default function Layout({ children }) {
         <Analytics />
         <div className="mx-auto">
           {children}
+          <Footer/>
         </div>
       </div>
     </>
