@@ -10,12 +10,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-
-
-import Menu from '@/components/menu';
-import Footer from '@/components/footer';
-
 const images = [
     '/event.jpg',
     '/event2.jpg',
@@ -135,16 +129,6 @@ export default function Home() {
                 <h3 className='text-xl text-black md:mr-4 pt-2 text-center pb-4 md:pb-0'> Available for delivery and pickup!</h3>
                 <a href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="font-semibold md:font-normal bg-slate-900 font-serif text-xl px-4 p-2 mx-auto md:mx-0 inline-block text-center w-full md:w-auto"> Order Online</a>
             </div>
-            <div className="bg-black text-center text-white p-0 font-serif text-xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
-                <h2 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Specials</h2>
-                <h2 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Food </h2>
-                <h2 onClick={() => setSection("cocktails")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Cocktails</h2>
-                <h2 onClick={() => setSection("wine")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Wine </h2>
-                <h2 onClick={() => setSection("beer")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Other Beverages </h2>
-            </div>
-            <div className="text-slate-900 backdrop-blur bg-stone-100/50 bg-cover text-slate-800 lg:flex p-4 pt-16 lg:justify-center">
-                <Menu tab={section}/>
-            </div>
         </div>
         <div className="bg-[#07403F] lg:flex" id="about">
             <div className="lg:w-1/2 bg-black">
@@ -208,8 +192,8 @@ export default function Home() {
                 Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                 </p>
                 <div className="w-full text-right">
-                    <Link href="/bookAnEvent" className="bg-black font-semibold text-slate-100 mx-auto py-2 inline-block px-4">
-                        Book Now
+                    <Link href="/events" className="bg-black font-semibold text-slate-100 mx-auto py-2 inline-block px-4">
+                        Learn More
                     </Link>
                 </div>
             </div>
@@ -228,11 +212,11 @@ export default function Home() {
                 <h2 className="font-bold text-2xl font-serif">Catered By La Bola</h2>
                 <i className="font-thin text-xl block">Our Menu, Your Venue</i>
                 <p className="mt-4">
-                Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
+                    Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
                 </p>
                 <div className="mt-8 text-right">
                 <Link href="/bookAnEvent" className="bg-white text-black font-semibold py-2 px-4">
-                    Catering Inquiry
+                    Start An Inquiry
                 </Link>
                 </div>
             </div>

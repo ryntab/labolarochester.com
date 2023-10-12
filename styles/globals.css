@@ -60,13 +60,13 @@ h1, h2, h3, h4, h5, h6 {
   
   .dropdown-enter-active {
     opacity: 1;
-    max-height: 20rem; /* Set the desired max height of the dropdown when it's open */
+    max-height: 30rem; /* Set the desired max height of the dropdown when it's open */
     transition: opacity 300ms, max-height 300ms ease-out;
   }
   
   .dropdown-exit {
     opacity: 1;
-    max-height: 20rem; /* Set the same max height as dropdown-enter-active to avoid flickering */
+    max-height: 30rem; /* Set the same max height as dropdown-enter-active to avoid flickering */
   }
   
   .dropdown-exit-active {

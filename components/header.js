@@ -44,17 +44,19 @@ export default function Header() {
         </div>
         <div className="flex items-center w-1/5 sm:w-2/5 bg-gradient-to-r from-black/0 to-black">
           <div className={`space-x-4 w-full font-semibold mr-8 font-thin text-slate-100 text-right pl-4 invisible md:visible`}>
+            <Link href="/" className="hover:border-b-2 py-1 menu">Home</Link>
             <Link href="/#about" className="hover:border-b-2 py-1 menu">About</Link>
             <Link href="/#contact" className="hover:border-b-2 py-1 menu">Contact</Link>
-            <Link href="/#menu"  className="hover:border-b-2 py-1 menu">Menu</Link>
+            <Link href="/menu"  className="hover:border-b-2 py-1 menu">Menu</Link>
             <Link href="/events" className="hover:border-b-2 py-1 menu">Events</Link>
           </div>
         </div>
     </div>
     <div className={`fixed w-0 h-0 pl-8 space-y-8 py-8 z-40 w-full bg-black/90 border-b-2 border-slate-500 font-semibold text-slate-100 text-left ${isMenuOpen ? 'pt-24 visible h-auto dropdown-enter dropdown-enter-active' : 'invisible dropdown-exit dropdown-exit-active'} md:invisible`}>
+            <Link href="/" className="block menu">Home</Link>
             <Link href="/#about" className="block menu">About</Link>
             <Link href="/#contact" className="block menu">Contact</Link>
-            <Link href="/#menu"  className="block menu">Menu</Link>
+            <Link href="/menu"  className="block menu">Menu</Link>
             <Link href="/events" className="block menu">Events</Link>
     </div>
     </>
