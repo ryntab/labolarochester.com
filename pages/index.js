@@ -157,53 +157,43 @@ export default function Home() {
                         <i>Your Mediterranean Culinary Haven in Downtown Rochester. </i> We fuse vibrant Spanish and Mediterranean flavors with the freshest ingredients, offering a diverse menu from tapas to paellas. Indulge in seasonal specials, capturing the essence of each season. Join us for a flavorful adventure, immersing yourself in the warmth of our hospitality and unique ambiance. We can&apos;t wait to share our love for food with you!
                     </p>
                     <div className="lg:flex">
-                        <div className="lg:w-1/2 px-6">
+                        <div className="w-full px-6">
                             <div className="w-full">
                                 <div className="border-none">
                                     <h2 className="text-lg font-bold pb-2 border-b-2 mb-2" id="contact"> Contact Us</h2>
-                                    <p>
+                                <p>
                                     <b className="text-lg">Email:</b>{" "}
                                     <a href="mailto:contact@labolarochester.com" className="text-blue-200 inline-block">
                                         contact@labolarochester.com
                                     </a>
-                                    </p>
-                                    <p>
+                                 </p>
+                                <p>
                                     <b className="text-lg">Phone:</b>{" "}
                                     <a href="tel:5854340044" className="text-blue-200">
                                         (585) 434-0044
                                     </a>
-                                    </p>
-                                </div>
-                            </div> 
-                            <div className="w-full pt-4">
-                                <h2 className="text-lg font-bold mb-2 border-b-2 pb-2"> Visit Us</h2>
-                                <div className='flex lg:block justify-between'>
-                                    <div className=""> 
-                                        <p><b className="text-lg">Mon-Fri</b><br/><i>- 11:30am - 8:00pm</i></p>
-                                        <b className='text-lg'>Sat-Sun</b>
-                                        <p className="italic">- Private Events Only</p>
-                                        <br/>
-                                    </div>
-                                    <div className="pb-6">
-                                        <p><b className="text-lg">Location</b></p>
-                                        <i>Mercantile On Main</i>
-                                        <p>240 East Main St.</p>
-                                        <p>Rochester, NY 14604</p>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        <div className="lg:w-1/2 w-full h-[50vh] lg:h-auto lg:px-0 border-slate-500 border-b-4 lg:border-b-0">
-                        <iframe
-                            title="An interactive map for showing La Bola's location downtown"
-                            className='map'
-                            width="100%"
-                            height="100%"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.MAPS_API_KEY}&q=La+Bola+Rochester`}
-                            allowFullscreen
-                        >We attempted to load an interactive map here, but your browser is unsupported</iframe>
+                                </p>
+                             </div>
+                        </div> 
+                    <div className="w-full pt-4">
+                        <h2 className="text-lg font-bold mb-2 border-b-2 pb-2"> Visit Us</h2>
+                        <div className='flex lg:block justify-between'>
+                            <div className=""> 
+                            <b className="text-lg">Hours</b>
+                                <p>Mon-Fri<br/><i className="text-sm">- 11:30am - 8:00pm</i></p>
+                                Sat-Sun
+                                <p className="italic text-sm">- Private Events Only</p>
+                                <br/>
+                            </div>
+                            <div className="pb-6">
+                                <p><b className="text-lg">Location</b></p>
+                                <i>Mercantile On Main</i>
+                                <p>240 East Main St.</p>
+                                <p>Rochester, NY 14604</p>
+                            </div>
+                            </div>
                         </div>
+                    </div> 
                     </div>
                 </div>
             </div>
