@@ -61,8 +61,8 @@ class MyDocument extends Document {
             dangerouslySetInnerHTML={{ __html: ` ${JSON.stringify(structuredData, null, 2)}` }}
           />
         </Head>
-        <body className="relative bg-[url(/bg2.jpg)] backdrop-filter bg-fixed bg-cover">
-          <div className="absolute inset-0 opacity-100 z-[-1] bg-fixed bg-gradient-to-t from-black"></div>
+        <body className="relative bg-white backdrop-filter bg-fixed bg-cover">
+          <div className=""></div>
           <Main />
           <NextScript />
         </body>

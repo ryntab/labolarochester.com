@@ -18,13 +18,7 @@ export default function MenuPage() {
     } 
     return(
         <>
-        <div className="w-full pt-32 md:pt-48 bg-black/90" id="menu">
-            <div className="w-full text-white p-4 bg-white/75 md:flex md:justify-end justify-center md:justify-start">
-                <h3 className='text-xl text-black md:mr-4 pt-2 text-center pb-4 md:pb-0'> Available for delivery and pickup!</h3>
-                <a href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="font-semibold md:font-normal bg-slate-900 font-serif text-xl px-4 p-2 mx-auto md:mx-0 inline-block text-center w-full md:w-auto"> Order Online</a>
-            </div>
-        </div>
-        <div className="">
+        <div className="pt-32 md:pt-48 bg-white/25">
             <div className="bg-black text-center text-white p-0 font-serif text-xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
             <h2 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Specials</h2>
             <h2 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Food </h2>

@@ -13,20 +13,9 @@ export default function Header() {
     setMenuOpen(!isMenuOpen);
   };
 
-  const scrollTo = (event, location) => {
-    toggleMenu();
-    event.preventDefault();
-    const element = document.querySelector(location);
-    console.log(document.getElementById("navbar").offsetHeight)
-    window.scrollTo({
-      top: element.getBoundingClientRect().top + window.scrollY - (document.getElementById("navbar").offsetHeight * 2),
-      behavior: 'smooth' 
-    });
-  }
-
   return (
     <>
-      <div id="navbar" className="backdrop-blur border-b-2 border-slate-500 max-w-7xl w-full bg-black/75 h-16 md:h-24 flex shadow-2xl shadow-black fixed z-50 justify-content-between">
+      <div id="navbar" className="backdrop-blur border-b-2 border-slate-500 w-full bg-black/75 h-16 md:h-24 flex shadow-2xl shadow-black fixed z-50 justify-content-between">
         <div className="w-1/5 sm:w-2/5 bg-gradient-to-r from-slate-900 flex items-center">
         <button aria-label="Open Menu" className="text-white text-xl font-semibold pl-8 visible md:invisible w-auto sm:w-0" onClick={toggleMenu}>
   {isMenuOpen ? (
@@ -53,11 +42,11 @@ export default function Header() {
         </div>
     </div>
     <div className={`fixed w-0 h-0 pl-8 space-y-8 py-8 z-40 w-full bg-black/90 border-b-2 border-slate-500 font-semibold text-slate-100 text-left ${isMenuOpen ? 'pt-24 visible h-auto dropdown-enter dropdown-enter-active' : 'invisible dropdown-exit dropdown-exit-active'} md:invisible`}>
-            <Link href="/" className="block menu">Home</Link>
-            <Link href="/#about" className="block menu">About</Link>
-            <Link href="/#contact" className="block menu">Contact</Link>
-            <Link href="/menu"  className="block menu">Menu</Link>
-            <Link href="/events" className="block menu">Events</Link>
+            <Link href="/" className="block menu" onClick={toggleMenu}>Home</Link>
+            <Link href="/#about" className="block menu" onClick={toggleMenu}>About</Link>
+            <Link href="/#contact" className="block menu" onClick={toggleMenu}>Contact</Link>
+            <Link href="/menu"  className="block menu" onClick={toggleMenu}>Menu</Link>
+            <Link href="/events" className="block menu" onClick={toggleMenu}>Events</Link>
     </div>
     </>
   );
