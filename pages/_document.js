@@ -34,10 +34,17 @@ export default function Document() {
             <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
             <script type="text/javascript" async src="//l.getsitecontrol.com/p43e1mm7.js"></script>
         </Head>
+<<<<<<< Updated upstream
         <body className="relative bg-[url(/bg2.jpg)] backdrop-filter bg-fixed bg-cover">
           <div className="absolute inset-0 opacity-100 z-[-1] bg-fixed bg-gradient-to-t from-slate-900"></div>
             <Main/>
             <NextScript />
+=======
+        <body className="relative backdrop-filter bg-white bg-fixed bg-cover">
+          <div className=""></div>
+          <Main />
+          <NextScript />
+>>>>>>> Stashed changes
         </body>
     </Html>
   );

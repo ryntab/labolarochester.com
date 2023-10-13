@@ -51,7 +51,7 @@ const Book = () => {
 
 
   return (
-    <div className="container mx-auto max-w-2xl bg-teal-900/75 pt-0 backdrop-blur">
+    <div className="container mx-auto max-w-2xl bg-teal-900 pt-0 backdrop-blur">
       <img className="w-full -m-x-6 mb-4 object-cover h-[50vh]" src="event2.jpg"/>
       <Link href="/"
           type="submit"
