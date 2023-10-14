@@ -82,24 +82,24 @@ export default function Home() {
         <meta name="description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester." />
     </Head>
     <div id="home"  className="max-w-7xl bg-teal-900 backdrop-blur mx-auto overflow-hidden">
-        <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-8 md:pt-24" style={{ backgroundImage: `url(/pic2.jpg)` }}>
-            <div className="ml-auto w-full h-full md:full bg-gradient-to-t from-black/90 border-slate-500">
-                <div className="bg-gradient-to-r mt-24 md:w-1/2 from-black font-semibold p-4 background-blur mb-4 text-left text-white">
+        <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg" style={{ backgroundImage: `url(/pic2.jpg)` }}>
+            <div className="ml-auto md:w-1/2 md:backdrop-blur-sm w-full h-full md:full bg-gradient-to-t from-black/90 border-slate-500 pt-8 md:pt-32">
+                <div className="bg-gradient-to-r mt-24 from-black font-semibold p-4 background-blur mb-4 text-left text-white">
                     <h6> 
                         Light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester.
                     </h6>
                 </div>
-                <div className="bg-gradient-to-l md:w-1/2  ml-auto from-black font-semibold p-4 background-blur mb-4 text-right text-white">
+                <div className="bg-gradient-to-l  ml-auto from-black font-semibold p-4 background-blur mb-4 text-right text-white">
                     <h6> 
                         Seasonal menu with daily specials, rotating sangrias, and specialty cocktails.
                     </h6>
                 </div>
-                <div className="bg-gradient-to-r md:w-1/2 from-black font-semibold p-4 background-blur mb-4 text-left text-white">
+                <div className="bg-gradient-to-r from-black font-semibold p-4 background-blur mb-4 text-left text-white">
                     <h6>
                         Located at the <span className="font-bold">Mercantile on Main</span>
                     </h6>
                 </div>
-                <div className="bg-gradient-to-l md:w-1/2 ml-auto from-black font-semibold p-4 background-blur font-bold text-right text-white">
+                <div className="bg-gradient-to-l ml-auto from-black font-semibold p-4 background-blur font-bold text-right text-white">
                     <h6>
                         Join Us for Lunch, Dinner & Cocktails!
                     </h6>
@@ -125,7 +125,7 @@ export default function Home() {
             </Slider>
         </div>
         <div className="w-full">
-            <div className="w-full text-white p-6 pt-6 md:flex md:justify-end" id="about">
+            <div className="w-full text-white p-6 pt-6 md:flex md:justify-end">
                 <h3 className='text-white md:mr-4 pt-2 text-center pb-4 md:pb-0'> Available for delivery and pickup!</h3>
                 <a href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="font-semibold md:font-normal bg-white text-black hover:scale-110 font-serif px-4 p-2 mx-auto md:mx-0 inline-block text-center w-full md:w-auto"> Order Online</a>
             </div>
@@ -142,7 +142,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-1/2 flex text-white">
                 <div className="font-serif p-6">
-                    <h1 className="font-bold text-2xl font-serif">
+                    <h1 className="font-bold text-2xl font-serif" id="about">
                         Discover La Bola
                     </h1>
                     <p className=" pb-4">
@@ -170,7 +170,7 @@ export default function Home() {
                             </div>
                             <div className="text-left">
                                 <div className="">
-                                    <span className="text-sm">
+                                    <span className="">
                                     Call us at{' '}
                                     <a href="tel:(585) 434-0044" className="text-blue-300">
                                         (585) 434-0044

@@ -6,8 +6,8 @@ export default function Event() {
     return(
         <div className="bg-white">
             <div className="max-w-7xl mx-auto">
-                <div className="relative">
-                    <img src="/hero2.jpg" className="h-full w-full h-[75vh] object-cover" alt="Background Image" />
+                <div className="relative h-[75vh]">
+                    <img src="/hero2.jpg" className="h-full w-full object-cover" alt="Background Image" />
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-full text-center">
                         <h1 className="text-display text-2xl md:text-4xl p-6 bg-black/75 backdrop-blur text-white/90 block">
                             Host Your Event With La Bola
@@ -36,8 +36,9 @@ export default function Event() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3 className="text-lg font-semibold w-full text-black p-6 text-leftr"> Click On A Venue To Learn More (Coming Soon)</h3>
+                <div className="p-6 pt-0 mt-0">
+                    <h3 className="text-lg font-semibold w-full text-black text-left"> Click On A Venue To Learn More</h3>
+                    <p className="text-sm"> We are currently updating venue pages with updated information, check back soon! In the meantime email us at <b>contact@labolarochester.com</b> to find out more.</p>
                 </div>
                 <div className="flex flex-wrap hover:cursor-pointer">
                     <Link href="/events/gallery" className="w-1/2 md:w-1/4 relative overflow-hidden">
