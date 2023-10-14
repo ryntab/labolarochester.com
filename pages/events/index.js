@@ -25,7 +25,7 @@ export default function Event() {
                         <p className="leading-6 font-sans">
                             Discover the perfect venue for your upcoming event, whether it&apos;s an office happy hour, an intimate private dinner, a joyous baby shower, a memorable wedding, or any other private or public occasion. At our establishment, we offer a versatile range of event spaces to suit your needs.
 
-                            With over 4,000 square feet of customizable space and various venue sizes available, we can cater to gatherings of all sizes. Whether you&apos;re planning an intimate dinner for six or a conference for up to 600 attendees, we have the ideal space for you.
+                            With over 6,000 square feet of customizable space and various venue sizes available, we can cater to gatherings of all sizes. Whether you&apos;re planning an intimate dinner for six or a conference for up to 600 attendees, we have the ideal space for you.
 
                             Our dedicated team and trusted partners are here to make your event exceptional. We can assist you in creating a tailored ambiance with personalized decorations, collaborate with you to craft a unique menu, or provide the assistance of an experienced event coordinator if needed. Your special day is important to us, and we&apos;re committed to ensuring a seamless and memorable experience.
                         </p>

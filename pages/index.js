@@ -191,8 +191,8 @@ export default function Home() {
             <div className="w-full md:flex">
                 <div className="w-full md:w-1/2">
                     <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
-                        <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover" alt="A display of roasted beets, goat cheese, and charred carrots and lebneh"/>
-                        <Image width={1024} height={1024} src={"/event3.jpg"} className="object-cover" alt="A display of charcuterie, meats and cheeses" />
+                        <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover" alt=""/>
+                        <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover" alt="A display of charcuterie, meats and cheeses" />
                     </Slider>
                 </div>
                 <div className="flex items-center justify-center">
