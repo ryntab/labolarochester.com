@@ -189,15 +189,15 @@ export default function Home() {
             </div>
         </div>
         <div className="text-black bg-white">
-            <div className="w-full md:flex overflow-hidden">
-                <div className="w-full md:w-1/2 h-auto">
+            <div className="w-full md:flex">
+                <div className="w-full md:w-1/2">
                     <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
-                        <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover md:h-[50vh] md:h-auto" alt="A bride and groom celebrating a wedding, holding hands and looking at decorations"/>
-                        <Image width={1024} height={1024} src={"/event2.jpg"} className="object-cover md:h-[50vh] md:h-auto" alt="The north atrium at the mercantile" />
-                        <Image width={1024} height={1024} src={"/event3.jpg"} className="object-cover md:h-[50vh] md:h-auto" alt="Bridesmaids holding flowers, laughing" />
-                        <Image width={1024} height={1024} src={"/catering2.jpg"} className="object-cover md:h-[50vh] md:h-auto" alt="A large table set in an upscale fashion" />
-                        <Image width={1024} height={1024} src={"/catering3.jpg"} className="object-cover md:h-[50vh] md:h-auto" alt="A charcuterie display of meats and cheeses" />
-                        <Image width={1024} height={1024} src={"/hero2.jpg"} className="object-cover md:h-[50vh] md:h-auto" alt="An intimate dining settiong for a wedding reception" />
+                        <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover md:h-[50vh]" alt="A bride and groom celebrating a wedding, holding hands and looking at decorations"/>
+                        <Image width={1024} height={1024} src={"/event2.jpg"} className="object-cover md:h-[50vh]" alt="The north atrium at the mercantile" />
+                        <Image width={1024} height={1024} src={"/event3.jpg"} className="object-cover md:h-[50vh]" alt="Bridesmaids holding flowers, laughing" />
+                        <Image width={1024} height={1024} src={"/catering2.jpg"} className="object-cover md:h-[50vh]" alt="A large table set in an upscale fashion" />
+                        <Image width={1024} height={1024} src={"/catering3.jpg"} className="object-cover md:h-[50vh]" alt="A charcuterie display of meats and cheeses" />
+                        <Image width={1024} height={1024} src={"/hero2.jpg"} className="object-cover md:h-[50vh]" alt="An intimate dining settiong for a wedding reception" />
                     </Slider>
                 </div>
                 <div className="flex items-center justify-center">
