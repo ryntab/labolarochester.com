@@ -137,7 +137,7 @@ export default function Home() {
                 width={1024}
                 height={1024}
                 src="/gusbus.png"
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full md:rounded-tl-full"
                 alt="Head Chef Gus"
                 />
             </div>
