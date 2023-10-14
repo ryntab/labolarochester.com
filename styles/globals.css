@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   .dropdown-enter-active {
     opacity: 1;
     max-height: 30rem; /* Set the desired max height of the dropdown when it's open */
-    transition: opacity 300ms, max-height 300ms ease-out;
+    transition: opacity 1000ms, max-height 300ms ease-out;
   }
   
   .dropdown-exit {
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   .dropdown-exit-active {
     opacity: 0;
     max-height: 0;
-    transition: opacity 300ms, max-height 300ms ease-in;
+    transition: opacity 1000ms, max-height 1000ms ease-in;
   }
 
   .modal-content {

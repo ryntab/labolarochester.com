@@ -7,7 +7,7 @@ export default function Event() {
         <div className="bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="relative">
-                    <img src="/hero2.jpg" className="h-full w-full max-h-[75vh] object-cover" alt="Background Image" />
+                    <img src="/hero2.jpg" className="h-full w-full h-[75vh] object-cover" alt="Background Image" />
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-full text-center">
                         <h1 className="text-display text-2xl md:text-4xl p-6 bg-black/75 backdrop-blur text-white/90 block">
                             Host Your Event With La Bola
@@ -37,7 +37,7 @@ export default function Event() {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-lg font-semibold w-full text-black p-6 text-leftr"> Click On A Venue To Learn More</h3>
+                    <h3 className="text-lg font-semibold w-full text-black p-6 text-leftr"> Click On A Venue To Learn More (Coming Soon)</h3>
                 </div>
                 <div className="flex flex-wrap hover:cursor-pointer">
                     <Link href="/events/gallery" className="w-1/2 md:w-1/4 relative overflow-hidden">

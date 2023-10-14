@@ -81,7 +81,7 @@ export default function Home() {
         <title>La Bola | Rochester, NY&apos;s Favorite Lunch and Dinner Spot | Cocktails, Wine Bar, Tapas</title>
         <meta name="description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester." />
     </Head>
-    <div id="home"  className="max-w-7xl mx-auto overflow-hidden">
+    <div id="home"  className="max-w-7xl bg-teal-900 backdrop-blur mx-auto overflow-hidden">
         <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg pt-8 md:pt-24" style={{ backgroundImage: `url(/pic2.jpg)` }}>
             <div className="ml-auto w-full h-full md:full bg-gradient-to-t from-black/90 border-slate-500">
                 <div className="bg-gradient-to-r mt-24 md:w-1/2 from-black font-semibold p-4 background-blur mb-4 text-left text-white">
@@ -124,14 +124,14 @@ export default function Home() {
                 <Image width="512" height="512" className="h-full  object-cover" src="/food2.jpg" alt="Ceasar Salad With Chicken" />
             </Slider>
         </div>
-        <div className="w-full" id="menu">
-            <div className="w-full text-white p-4 bg-white md:flex md:justify-end justify-center md:justify-start">
-                <h3 className='text-xl text-black md:mr-4 pt-2 text-center pb-4 md:pb-0'> Available for delivery and pickup!</h3>
-                <a href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="font-semibold md:font-normal bg-slate-900 font-serif text-xl px-4 p-2 mx-auto md:mx-0 inline-block text-center w-full md:w-auto"> Order Online</a>
+        <div className="w-full">
+            <div className="w-full text-white p-6 pt-6 md:flex md:justify-end" id="about">
+                <h3 className='text-white md:mr-4 pt-2 text-center pb-4 md:pb-0'> Available for delivery and pickup!</h3>
+                <a href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="font-semibold md:font-normal bg-white text-black hover:scale-110 font-serif px-4 p-2 mx-auto md:mx-0 inline-block text-center w-full md:w-auto"> Order Online</a>
             </div>
         </div>
-        <div className="lg:flex max-w-7xl mx-auto" id="about">
-            <div className="lg:w-1/2 bg-black m-6">
+        <div className="lg:flex flex-row-reverse max-w-7xl mx-auto">
+            <div className="lg:w-1/2 mdLp-6 pr-0">
                 <Image
                 width={1024}
                 height={1024}
@@ -140,9 +140,9 @@ export default function Home() {
                 alt="Head Chef Gus"
                 />
             </div>
-            <div className="w-full lg:w-1/2 flex">
+            <div className="w-full lg:w-1/2 flex text-white">
                 <div className="font-serif p-6">
-                    <h1 className="font-bold text-2xl font-serif mb-2">
+                    <h1 className="font-bold text-2xl font-serif">
                         Discover La Bola
                     </h1>
                     <p className=" pb-4">
@@ -154,64 +154,63 @@ export default function Home() {
                         We can't wait to share our love for food with you!
                     </p>
                     <div className="lg:flex">
-                        <div className="w-full lg:w-1/2">
-                            <div className="justify-between">
-                            <div className="w-auto">
-                                <p><b className="text-lg mb-4">Hours</b></p>
-                                <p>Mon-Fri<br/><i className="text-sm ml-4">- 11:30am - 8:00pm</i></p>
-                                <p>Sat-Sun<br/><i className="text-sm ml-4">- Private Events Only</i></p>
+                        <div className="w-full">
+                            <div className="flex w-full justify-between border-y-2 py-6 my-6">
+                                <div className="w-auto ">
+                                    <p><b className="text-lg mb-4 w-full font-serif">Hours</b></p>
+                                    <p>Monday - Friday <span className="text-right block text-sm italic">11:30 AM - 8 PM</span></p>
+                                    <p>Saturday - Sunday <span className="text-right block text-sm italic">11:30 AM - 8 PM</span></p>
+                                </div>
+                                <div className="">
+                                    <p><b className="text-lg mb-4 font-serif">Location</b></p>
+                                    <p>Mercantile On Main</p>
+                                    <p>240 East Main St.</p>
+                                    <p>Rochester, NY 14604</p>
+                                </div>
                             </div>
-                            <div className="mt-6">
-                                <p><b className="text-lg mb-4">Location</b></p>
-                                <p><i>Mercantile On Main</i></p>
-                                <p>240 East Main St.</p>
-                                <p>Rochester, NY 14604</p>
-                            </div>
-                            </div>
+                            <div className="text-left">
+                                <div className="">
+                                    <span className="text-sm">
+                                    Call us at{' '}
+                                    <a href="tel:(585) 434-0044" className="text-blue-300">
+                                        (585) 434-0044
+                                    </a>{' '}
+                                    or email us at{' '}
+                                    <a href="mailto:contact@labolarochester.com" className="text-blue-300">
+                                        contact@labolarochester.com
+                                    </a>
+                                    </span>
+                                </div>
+                                </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="md:flex text-black">
-            <div className="md:w-1/2 w-full">
-                <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
-                    <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover w-full h-full" alt="A display of roasted beets, goat cheese, and charred carrots and lebneh"/>
-                    <Image width={1024} height={1024} src={"/event3.jpg"} className="object-cover w-full h-full" alt="A display of charcuterie, meats and cheeses" />
-                </Slider>
+        <div className="text-black bg-white">
+            <div className="w-full md:flex">
+                <div className="w-full md:w-1/2">
+                    <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
+                        <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover" alt="A display of roasted beets, goat cheese, and charred carrots and lebneh"/>
+                        <Image width={1024} height={1024} src={"/event3.jpg"} className="object-cover" alt="A display of charcuterie, meats and cheeses" />
+                    </Slider>
+                </div>
                 <div className="flex items-center justify-center">
-                <div className="text-left p-6">
-                    <h2 className="font-bold text-2xl font-serif">Tailored Events at La Bola</h2>
-                    <i className="text-xl block font-serif">Our Venue, Your Vision</i>
-                    <p className="mt-4">
-                        Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
-                    </p>
-                    <div className="mt-8 text-right">
-                    <Link href="/events" className="bg-black text-white font-semibold py-2 px-4">
-                        Learn More
-                    </Link>
+                    <div className="text-left p-6">
+                        <h2 className="font-bold text-2xl font-serif">Tailored Events at La Bola</h2>
+                        <i className="text-xl block font-serif">Our Venue, Your Vision</i>
+                        <div>
+                            
+                        </div>
+                        <p className="mt-4">
+                            Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
+                        </p>
+                        <div className="mt-8 text-right">
+                        <Link href="/events" className="bg-black text-white font-semibold py-2 px-4">
+                            Learn More
+                        </Link>
+                        </div>
                     </div>
-                </div>
-                </div>
-            </div>
-            <div className="md:w-1/2 bg-black w-full text-white">
-                <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
-                    <Image width={1024} height={1024} src={"/catering.jpg"} className="object-cover w-full h-full" alt="A display of roasted beets, goat cheese, and charred carrots and lebneh"/>
-                    <Image width={1024} height={1024} src={"/catering3.jpg"} className="object-cover w-full h-full" alt="A display of charcuterie, meats and cheeses" />
-                </Slider>
-                <div className="bg-black/90 h-auto flex items-center justify-center">
-                <div className="text-left p-6">
-                    <h2 className="font-bold text-2xl font-serif">Catered By La Bola</h2>
-                    <i className="font-serif text-xl block">Our Menu, Your Venue</i>
-                    <p className="mt-4">
-                        Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it's a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
-                    </p>
-                    <div className="mt-8 text-right">
-                    <Link href="/bookAnEvent" className="bg-white text-black font-semibold py-2 px-4">
-                        Start An Inquiry
-                    </Link>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>

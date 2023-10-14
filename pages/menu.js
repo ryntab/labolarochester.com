@@ -7,18 +7,11 @@ export default function MenuPage() {
 
     const setSection = (section) => {
         setSection2(section);
-        scrollToMenu();
     }
 
-    const scrollToMenu = () => {
-        window.scrollTo({
-            top: document.getElementById("menu").getBoundingClientRect().top + window.scrollY - (document.getElementById("navbar").offsetHeight * 2),
-            behavior: 'smooth' 
-          });
-    } 
     return(
         <>
-        <div className="pt-32 md:pt-48 bg-white/25">
+        <div className="pt-32 md:pt-48 bg-black md:bg-teal-900 min-h-[100vh]">
             <div className="bg-black text-center text-white p-0 font-serif text-xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
             <h2 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Specials</h2>
             <h2 onClick={() => setSection("menu")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Food </h2>
