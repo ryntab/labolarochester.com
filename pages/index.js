@@ -151,7 +151,7 @@ export default function Home() {
                         offering a diverse menu from tapas to paellas. Indulge in seasonal specials,
                         capturing the essence of each season. Join us for a flavorful adventure,
                         immersing yourself in the warmth of our hospitality and unique ambiance.
-                        We can&apos;t wait to share our love for food with you!
+                        We can't wait to share our love for food with you!
                     </p>
                     <div className="lg:flex">
                         <div className="w-full lg:w-1/2">
@@ -204,7 +204,7 @@ export default function Home() {
                     <h2 className="font-bold text-2xl font-serif">Catered By La Bola</h2>
                     <i className="font-serif text-xl block">Our Menu, Your Venue</i>
                     <p className="mt-4">
-                        Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it&apos;s a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
+                        Elevate your event with the exquisite flavors of La Bola. Our catering service brings the taste of the Mediterranean directly to your venue. Whether it's a corporate gathering, a wedding reception, or a private celebration, our versatile menu and professional team will make your event memorable. From tapas to paellas, our curated selection offers a variety of options to suit your preferences and delight your guests. Let La Bola cater your event and ensure an extraordinary culinary experience that reflects the essence of Spanish and Mediterranean cuisine.
                     </p>
                     <div className="mt-8 text-right">
                     <Link href="/bookAnEvent" className="bg-white text-black font-semibold py-2 px-4">
