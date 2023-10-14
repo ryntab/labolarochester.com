@@ -80,6 +80,7 @@ export default function Home() {
     <Head>
         <title>La Bola | Rochester, NY&apos;s Favorite Lunch and Dinner Spot | Cocktails, Wine Bar, Tapas</title>
         <meta name="description" content="Experience the vibrant flavors of Spain and the Mediterranean at La Bola, a light fare restaurant and bar with Spanish & Mediterranean influences in the heart of downtown Rochester." />
+        <link rel="canonical" href="https://labolarochester.com"></link>
     </Head>
     <div id="home"  className="max-w-7xl bg-teal-900 backdrop-blur mx-auto overflow-hidden">
         <div className="w-full relative flex bg-center sm:h-auto bg-cover bg-no-repeat font-serif text-lg" style={{ backgroundImage: `url(/pic2.jpg)` }}>
