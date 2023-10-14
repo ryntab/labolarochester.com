@@ -151,7 +151,7 @@ export default function Home() {
                         offering a diverse menu from tapas to paellas. Indulge in seasonal specials,
                         capturing the essence of each season. Join us for a flavorful adventure,
                         immersing yourself in the warmth of our hospitality and unique ambiance.
-                        We can't wait to share our love for food with you!
+                        We can&apos;t wait to share our love for food with you!
                     </p>
                     <div className="lg:flex">
                         <div className="w-full">
