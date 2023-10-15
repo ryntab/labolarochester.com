@@ -171,13 +171,13 @@ export default function Home() {
                             </div>
                             <div className="text-left">
                                 <div className="">
-                                    <span className="font-serif">
+                                    <span className="font-sans">
                                     Call us at{' '}
-                                    <a href="tel:(585) 434-0044" className="text-blue-300 font-serif">
+                                    <a href="tel:(585) 434-0044" className="text-blue-300 font-sans">
                                         (585) 434-0044
                                     </a>{' '}
                                     or email us at{' '}
-                                    <a href="mailto:contact@labolarochester.com" className="text-blue-300 font-serif">
+                                    <a href="mailto:contact@labolarochester.com" className="text-blue-300 font-sans">
                                         contact@labolarochester.com
                                     </a>
                                     </span>
@@ -191,14 +191,7 @@ export default function Home() {
         <div className="text-black bg-white">
             <div className="w-full md:flex">
                 <div className="w-full lg:w-1/2 overflow-hidden">
-                    <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
-                        <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover md:h-[50vh]" alt="A bride and groom celebrating a wedding, holding hands and looking at decorations"/>
-                        <Image width={1024} height={1024} src={"/event2.jpg"} className="object-cover md:h-[50vh]" alt="The north atrium at the mercantile" />
-                        <Image width={1024} height={1024} src={"/event3.jpg"} className="object-cover md:h-[50vh]" alt="Bridesmaids holding flowers, laughing" />
-                        <Image width={1024} height={1024} src={"/catering2.jpg"} className="object-cover md:h-[50vh]" alt="A large table set in an upscale fashion" />
-                        <Image width={1024} height={1024} src={"/catering3.jpg"} className="object-cover md:h-[50vh]" alt="A charcuterie display of meats and cheeses" />
-                        <Image width={1024} height={1024} src={"/hero2.jpg"} className="object-cover md:h-[50vh]" alt="An intimate dining settiong for a wedding reception" />
-                    </Slider>
+                <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover" alt="A bride and groom celebrating a wedding, holding hands and looking at decorations"/>
                 </div>
                 <div className="flex items-center justify-center w-full lg:w-1/2">
                     <div className="text-left p-6">
