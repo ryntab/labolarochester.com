@@ -211,9 +211,9 @@ export default function Home() {
                             Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                         </p>
                         <div className="mt-8 text-right">
-                        <Link href="/events" className="bg-black text-white font-semibold py-2 px-4 font-serif">
-                            Learn More
-                        </Link>
+                            <Link href="/events" className="hover:bg-black/25 transition-all duration-500 text-black font-semibold py-2 px-4 font-serif border-2 border-black">
+                                Event Info
+                            </Link>
                         </div>
                     </div>
                 </div>
