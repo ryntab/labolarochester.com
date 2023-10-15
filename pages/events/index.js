@@ -117,7 +117,7 @@ export default function Event() {
                             more. There’s just enough privacy for your guests to stay connected, and just enough
                             ambiance to inspire and enliven.
                         </p>
-                        <p className="font-semibold mt-2"> Interested in finding out more? <a href="/bookAnEvent" className="text-blue-500 font-semibold underline">Submit An Inquiry</a></p>
+                        <p className="font-semibold mt-2"> Interested in finding out more? <Link href="/bookAnEvent" className="text-blue-500 font-semibold underline">Submit An Inquiry</Link></p>
                     </div>
                     <div className="md:w-1/3 p-6 font-serif">
                         <h2 className="font-semibold font-serif"> Capacity:</h2>
@@ -149,7 +149,7 @@ export default function Event() {
                             it all. Let the celebration begin. Or the awards ceremony, cocktail party, trade show,
                             vendor appreciation party.
                         </p>
-                        <p className="font-semibold mt-2"> Interested in finding out more? <a href="/bookAnEvent" className="text-blue-500 font-semibold underline">Submit An Inquiry</a></p>
+                        <p className="font-semibold mt-2"> Interested in finding out more? <Link href="/bookAnEvent" className="text-blue-500 font-semibold underline">Submit An Inquiry</Link></p>
                     </div>
                     <div className="md:w-1/3 p-6 font-serif">
                         <h2 className="font-semibold font-serif"> Capacity:</h2>
