@@ -126,18 +126,18 @@ export default function Home() {
             </Slider>
         </div>
         <div className="w-full">
-            <div className="w-full text-white p-6 pt-6 md:flex md:justify-end">
+            <div className="w-full text-white p-6 pt-6 md:flex md:justify-end bg-black/50 shadow-xl">
                 <h3 className='text-white md:mr-4 pt-2 text-center pb-4 md:pb-0'> Available for delivery and pickup!</h3>
                 <a href="https://order.toasttab.com/online/la-bola-240-e-main-st" className="font-semibold md:font-normal bg-white text-black hover:scale-110 font-serif px-4 p-2 mx-auto md:mx-0 inline-block text-center w-full md:w-auto"> Order Online</a>
             </div>
         </div>
         <div className="lg:flex flex-row-reverse max-w-7xl mx-auto">
-            <div className="lg:w-1/2 mdLp-6 pr-0">
+            <div className="lg:w-1/2 pr-0">
                 <Image
                 width={1024}
                 height={1024}
                 src="/gusbus.png"
-                className="object-cover w-full h-full md:rounded-tl-full"
+                className="object-cover w-full h-full"
                 alt="Head Chef Gus"
                 />
             </div>
@@ -146,7 +146,7 @@ export default function Home() {
                     <h1 className="font-bold text-2xl font-serif" id="about">
                         Discover La Bola
                     </h1>
-                    <p className=" pb-4">
+                    <p className=" pb-4 font-serif">
                         <i>Your Mediterranean Culinary Haven in Downtown Rochester. </i> We fuse
                         vibrant Spanish and Mediterranean flavors with the freshest ingredients,
                         offering a diverse menu from tapas to paellas. Indulge in seasonal specials,
@@ -157,7 +157,7 @@ export default function Home() {
                     <div className="lg:flex">
                         <div className="w-full">
                             <div className="flex w-full justify-between border-y-2 py-6 my-6">
-                                <div className="w-auto ">
+                                <div className="w-auto">
                                     <p><b className="text-lg mb-4 w-full font-serif">Hours</b></p>
                                     <p>Monday - Friday <span className="text-right block text-sm italic">11:30 AM - 8 PM</span></p>
                                     <p>Saturday - Sunday <span className="text-right block text-sm italic">11:30 AM - 8 PM</span></p>
@@ -171,18 +171,18 @@ export default function Home() {
                             </div>
                             <div className="text-left">
                                 <div className="">
-                                    <span className="">
+                                    <span className="font-serif">
                                     Call us at{' '}
-                                    <a href="tel:(585) 434-0044" className="text-blue-300">
+                                    <a href="tel:(585) 434-0044" className="text-blue-300 font-serif">
                                         (585) 434-0044
                                     </a>{' '}
                                     or email us at{' '}
-                                    <a href="mailto:contact@labolarochester.com" className="text-blue-300">
+                                    <a href="mailto:contact@labolarochester.com" className="text-blue-300 font-serif">
                                         contact@labolarochester.com
                                     </a>
                                     </span>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ export default function Home() {
         </div>
         <div className="text-black bg-white">
             <div className="w-full md:flex">
-                <div className="w-full md:w-1/2">
+                <div className="w-full lg:w-1/2 overflow-hidden">
                     <Slider autoplay="true" autoplaySpeed={4500} adaptiveHeight={true}>
                         <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover md:h-[50vh]" alt="A bride and groom celebrating a wedding, holding hands and looking at decorations"/>
                         <Image width={1024} height={1024} src={"/event2.jpg"} className="object-cover md:h-[50vh]" alt="The north atrium at the mercantile" />
@@ -200,18 +200,18 @@ export default function Home() {
                         <Image width={1024} height={1024} src={"/hero2.jpg"} className="object-cover md:h-[50vh]" alt="An intimate dining settiong for a wedding reception" />
                     </Slider>
                 </div>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center w-full lg:w-1/2">
                     <div className="text-left p-6">
                         <h2 className="font-bold text-2xl font-serif">Tailored Events at La Bola</h2>
                         <i className="text-xl block font-serif">Our Venue, Your Vision</i>
                         <div>
                             
                         </div>
-                        <p className="mt-4">
+                        <p className="mt-4 font-serif">
                             Welcome to La Bola, where we invite you to host a variety of events in our delightful Mediterranean-inspired venue. Whether it&apos;s a private party, corporate event, social gathering, or a special occasion like a wedding, our versatile space and dedicated events team are here to tailor the experience to your needs. Imagine celebrating amidst the perfect blend of Spanish and Mediterranean ambiance, with carefully curated menus and personalized touches to make your event truly exceptional. Contact us today to discuss how we can turn your event into a memorable Mediterranean affair at La Bola.
                         </p>
                         <div className="mt-8 text-right">
-                        <Link href="/events" className="bg-black text-white font-semibold py-2 px-4">
+                        <Link href="/events" className="bg-black text-white font-semibold py-2 px-4 font-serif">
                             Learn More
                         </Link>
                         </div>
@@ -219,9 +219,9 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className="bg-slate-900/90 p-6 justify-left mx-auto">
-            <div className="max-w-md mx-auto text-center">
-                <a className="block text-center" href="https://avvinorochester.com">
+        <div className="justify-left flex bg-[url('/food.jpg')] bg-cover bg-center">
+            <div className="md:w-1/2 bg-slate-900/90 p-6">
+                <a className="block sm:w-1/2" href="https://avvinorochester.com">
                     <Image width={1024} height={1024} alt="Logo For Avvino, Text surrounded by curly frills" src="/avvino.png" className="mb-4 px-4 py-2 rounded object-fit" />
                 </a>
                 <h2 className='font-bold text-lg text-white font-serif ml-6 mb-2 mt-0'> From Avvino To La Bola</h2>
