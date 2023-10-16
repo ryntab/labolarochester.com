@@ -1,9 +1,14 @@
 import Link from "next/link";
 
-import { ArrowRightIcon } from "@heroicons/react/outline";
+import Head from "next/head";
 
 export default function Event() {
     return(
+        <>
+        <Head>
+            <title>Events - La Bola By Avvino</title>
+            <meta name="description" content="Discover the perfect venue for your upcoming event, whether it's an office happy hour, an intimate private dinner, a joyous baby shower, or a memorable wedding." />
+        </Head>
         <div className="bg-white/75 backdrop-blur">
             <div className="max-w-7xl mx-auto">
                 <div className="relative h-[75vh]">
@@ -198,5 +203,6 @@ export default function Event() {
             </div>
             <p className="p-6 font-semibold font-sans bg-white"> For more information and FAQs checkout The Mercantile&apos;s <a href="/EventCatalog.pdf" className="text-blue-500 underline">Event Catalog</a></p>
         </div>
+        </>
     )
 }

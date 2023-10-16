@@ -1,5 +1,7 @@
 import React from "react";
 
+import Head from "next/head";
+
 import Menu from "@/components/menu";
 
 export default function MenuPage() {
@@ -11,6 +13,10 @@ export default function MenuPage() {
 
     return(
         <>
+        <Head>
+            <title>Menu - La Bola By Avvino</title>
+            <meta name="description" content="View La Bola Menu | Tapas, Specials, Entrees, Wine List, Draft Beer" />
+        </Head>
         <div className="pt-32 md:pt-48 bg-black md:bg-teal-900 min-h-[100vh]">
             <div className="bg-black text-center text-white p-0 font-serif text-xl mx-auto uppercase flex-wrap sm:flex cursor-pointer">
             <h2 onClick={() => setSection("specials")} className="sm:w-1/5 p-4 hover:bg-white/50 my-auto"> Specials</h2>
