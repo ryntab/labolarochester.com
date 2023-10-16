@@ -25,7 +25,7 @@ export default function Event() {
                     </div>
                     <div className="w-full p-6 w-full inset-0">
                         <h3 className="font-semibold text-xl pb-2">
-                            Your Vision, Your Event – Our Versatile Spaces
+                            Your Vision, Your Event – Our Versatile Spaces and Menu
                         </h3>
                         <p className="leading-6 font-serif">
                             Discover the perfect venue for your upcoming event, whether it&apos;s an office happy hour, an intimate private dinner, a joyous baby shower, a memorable wedding, or any other private or public occasion. At our establishment, we offer a versatile range of event spaces to suit your needs.
