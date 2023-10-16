@@ -191,7 +191,7 @@ export default function Home() {
         <div className="text-black bg-white">
             <div className="w-full md:flex">
                 <div className="w-full lg:w-1/2 overflow-hidden">
-                <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover" alt="A bride and groom celebrating a wedding, holding hands and looking at decorations"/>
+                <Image width={1024} height={1024} src={"/event.jpg"} className="object-cover h-full" alt="A bride and groom celebrating a wedding, holding hands and looking at decorations"/>
                 </div>
                 <div className="flex items-center justify-center w-full lg:w-1/2">
                     <div className="text-left p-6">
