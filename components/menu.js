@@ -12,7 +12,7 @@ export default function Menu(pageProps) {
     // Fetch menu data based on pageProps.tab
     const fetchMenu = async () => {
         try {
-        const response = await fetch(`https://cms.dylandunn.me/menu-items`);
+        const response = await fetch(`/menu-items.json`);
         const data = await response.json();
         setMenu(data);
         console.log(data)

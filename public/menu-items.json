@@ -1,0 +1,804 @@
+[
+  {
+    "id": 3,
+    "Section": "tapas",
+    "Name": "PATATAS BRAVAS",
+    "Description": "Fingerling Potatoes, Spicy Bravas sauces, Lemon Aioli",
+    "Price": "10",
+    "created_at": "2023-09-26T04:58:46.728Z",
+    "updated_at": "2023-09-26T04:58:46.731Z"
+  },
+  {
+    "id": 4,
+    "Section": "tapas",
+    "Name": "PAN CON TOMATE",
+    "Description": "Tomato Spread, Sea Salt, Spanish Olive Oil, House-Made Sourdough",
+    "Price": "7",
+    "created_at": "2023-09-26T04:59:07.220Z",
+    "updated_at": "2023-09-26T04:59:07.223Z"
+  },
+  {
+    "id": 5,
+    "Section": "tapas",
+    "Name": "RICOTTA TOAST",
+    "Description": "Orange Marmalade, Marcona Almonds, Maldon Sea Salt, Black Pepper Honey",
+    "Price": "10",
+    "created_at": "2023-09-26T04:59:30.403Z",
+    "updated_at": "2024-01-30T21:52:49.009Z"
+  },
+  {
+    "id": 6,
+    "Section": "tapas",
+    "Name": "CHARCUTERIE",
+    "Description": "Rotating Cheeses & Cured Meats, Seasonal Jam, Marcona Almonds, Olives, Spicy Mustard, Assorted House-Made Breads",
+    "Price": "21/35",
+    "created_at": "2023-09-26T04:59:51.065Z",
+    "updated_at": "2023-09-26T04:59:51.067Z"
+  },
+  {
+    "id": 7,
+    "Section": "tapas",
+    "Name": "IMPORTED CONSERVAS",
+    "Description": "Wild Cockles in Salt Brine, Octopus In Olive Oil, Razor Clams In Salt Brine, Scallops in Olive Oil and Tomato Sauce",
+    "Price": "17/30",
+    "created_at": "2023-09-26T05:00:31.986Z",
+    "updated_at": "2023-09-26T05:00:31.989Z"
+  },
+  {
+    "id": 9,
+    "Section": "tapas",
+    "Name": "GAMBAS AL AIJILO",
+    "Description": "Shrimp A La Plancha, Roasted Garlic, Parsley, Chili Oil",
+    "Price": "14",
+    "created_at": "2023-09-26T05:01:07.954Z",
+    "updated_at": "2023-10-12T21:00:50.736Z"
+  },
+  {
+    "id": 10,
+    "Section": "tapas",
+    "Name": "Pear & Fig Focaccia",
+    "Description": "Onion Jam, Gorgonzola, Goat Cheese, Brie, Manchego, Black Pepper Honey, Candied Walnuts",
+    "Price": "12",
+    "created_at": "2023-09-26T05:01:26.400Z",
+    "updated_at": "2024-01-30T21:51:58.789Z"
+  },
+  {
+    "id": 11,
+    "Section": "sandwiches",
+    "Name": "PERENNE",
+    "Description": "Shaved Beef, Arugula, Gorgonzola, Chimichurri",
+    "Price": "17",
+    "created_at": "2023-09-26T05:01:47.859Z",
+    "updated_at": "2023-09-26T05:01:47.862Z"
+  },
+  {
+    "id": 13,
+    "Section": "sandwiches",
+    "Name": "ROSALINA",
+    "Description": "Eggplant, Roasted Figs, Manchego, Sherry",
+    "Price": "14",
+    "created_at": "2023-09-26T05:03:25.002Z",
+    "updated_at": "2024-02-26T18:03:11.569Z"
+  },
+  {
+    "id": 15,
+    "Section": "salads",
+    "Name": "HOUSE SALAD",
+    "Description": "Mixed Mediterranean Salad Greens, Radishes, Tomatoes, Cucumbers, Sherry Vinaigrette",
+    "Price": "5",
+    "created_at": "2023-09-26T05:06:09.855Z",
+    "updated_at": "2023-09-26T05:06:09.859Z"
+  },
+  {
+    "id": 16,
+    "Section": "salads",
+    "Name": "LENTIL SALAD",
+    "Description": "Charred Broccoli, Cauliflower, & Brussel Sprouts, Pickled Onions, Manchengo, Chili Oil, Buttermilk Dressing",
+    "Price": "12",
+    "created_at": "2023-09-26T05:06:27.909Z",
+    "updated_at": "2023-10-12T21:07:33.973Z"
+  },
+  {
+    "id": 17,
+    "Section": "salads",
+    "Name": "GRAPE & BURRATA SALAD",
+    "Description": "Fresh Figs, Pomegranate, Pistachios, Basil, Balsamic & Pomegranate Glaze",
+    "Price": "12",
+    "created_at": "2023-09-26T05:07:02.597Z",
+    "updated_at": "2023-10-12T21:08:32.279Z"
+  },
+  {
+    "id": 18,
+    "Section": "sandwiches",
+    "Name": "Grilled Cheese & Tomato Soup",
+    "Description": "Focaccia Grilled Cheese, Smokey Tomato Velouté, Creme Fraiche, Fresh Basil, Lemon-Infused Olive Oil",
+    "Price": "13",
+    "created_at": "2023-09-26T05:07:18.558Z",
+    "updated_at": "2024-04-14T22:43:44.637Z"
+  },
+  {
+    "id": 19,
+    "Section": "entrees",
+    "Name": "Arroz Con Pollo",
+    "Description": "Half-Roasted Chicken, Saffron Rice, Preserved Lemon",
+    "Price": "19",
+    "created_at": "2023-09-26T05:07:34.551Z",
+    "updated_at": "2024-01-30T22:40:16.442Z"
+  },
+  {
+    "id": 20,
+    "Section": "entrees",
+    "Name": "LAMB MEATBALLS",
+    "Description": "Spiced Yogurt, Salsa Bravas, House-Made Pita",
+    "Price": "18",
+    "created_at": "2023-09-26T05:07:58.818Z",
+    "updated_at": "2023-09-26T05:09:19.103Z"
+  },
+  {
+    "id": 21,
+    "Section": "entrees",
+    "Name": "Crab RISOTTO",
+    "Description": "Grilled Shrimp, Paella Rice, Saffron Aioli, Lump Crab",
+    "Price": "23",
+    "created_at": "2023-09-26T05:09:58.959Z",
+    "updated_at": "2024-01-30T22:40:56.789Z"
+  },
+  {
+    "id": 22,
+    "Section": "entrees",
+    "Name": "PASTA",
+    "Description": "Fusilli, Sobrasada Sausage Ragú, Pecorino Romano, Scallion Oil, Burrata",
+    "Price": "17",
+    "created_at": "2023-09-26T05:10:18.380Z",
+    "updated_at": "2024-01-30T22:41:45.913Z"
+  },
+  {
+    "id": 23,
+    "Section": "sandwiches",
+    "Name": "BOLA BURGER",
+    "Description": "Double 1/3lb Patties, Onion Jam, Lemon Aioli, Grand Cru, Lettuce, Pork Belly",
+    "Price": "17",
+    "created_at": "2023-09-26T05:10:34.280Z",
+    "updated_at": "2024-01-30T22:43:33.691Z"
+  },
+  {
+    "id": 24,
+    "Section": "sandwiches",
+    "Name": "LA RAMBLA",
+    "Description": "Chorizo, Apple, Pear, Goat Cheese, Arugula Pesto",
+    "Price": "14",
+    "created_at": "2023-09-26T05:11:23.817Z",
+    "updated_at": "2023-10-12T21:05:51.425Z"
+  },
+  {
+    "id": 25,
+    "Section": "cocktails",
+    "Name": "SEVILLA SPRITZ",
+    "Description": "Tanquery Sevilla Orange, Strawberry, Aperol, Ginger, Cava",
+    "Price": "12",
+    "created_at": "2023-09-26T05:11:48.168Z",
+    "updated_at": "2023-09-26T05:11:48.172Z"
+  },
+  {
+    "id": 26,
+    "Section": "cocktails",
+    "Name": "ROCOCO LOCO",
+    "Description": "Vodka, Espresso, Maple, Cinnamon, Rosemary",
+    "Price": "14",
+    "created_at": "2023-09-26T05:12:06.404Z",
+    "updated_at": "2023-09-26T05:12:06.407Z"
+  },
+  {
+    "id": 27,
+    "Section": "cocktails",
+    "Name": "LA PERLA",
+    "Description": "Tequila, Manzanilla, Pear, Lemon",
+    "Price": "12",
+    "created_at": "2023-09-26T05:13:10.912Z",
+    "updated_at": "2023-09-26T05:13:10.915Z"
+  },
+  {
+    "id": 28,
+    "Section": "cocktails",
+    "Name": "MERC MARG",
+    "Description": "Tequila, Apricot, Thyme, Lime",
+    "Price": "12",
+    "created_at": "2023-09-26T05:13:31.107Z",
+    "updated_at": "2023-09-26T05:13:31.111Z"
+  },
+  {
+    "id": 29,
+    "Section": "cocktails",
+    "Name": "VAULT SOUR",
+    "Description": "Vodka, Campari, Agave, Lemon, Orange",
+    "Price": "12",
+    "created_at": "2023-09-26T05:13:55.663Z",
+    "updated_at": "2023-09-26T05:13:55.666Z"
+  },
+  {
+    "id": 30,
+    "Section": "cocktails",
+    "Name": "LA BOLA OLD FASHIONED",
+    "Description": "Tequila, Sage Syrup, Orange, Bitters",
+    "Price": "12",
+    "created_at": "2023-09-26T05:14:09.445Z",
+    "updated_at": "2023-09-26T05:14:09.448Z"
+  },
+  {
+    "id": 31,
+    "Section": "cocktails",
+    "Name": "ROCHESTER SOUR",
+    "Description": "Bourbon, Apple Cider, Simple Syrup, Tempranillo Float",
+    "Price": "12",
+    "created_at": "2023-09-26T05:14:23.666Z",
+    "updated_at": "2024-01-30T23:27:15.540Z"
+  },
+  {
+    "id": 32,
+    "Section": "cocktails",
+    "Name": "STARBOARD",
+    "Description": "Spanish Brandy, Scotch, Orange Bitters, Marcona Almond Mist",
+    "Price": "12",
+    "created_at": "2023-09-26T05:15:03.966Z",
+    "updated_at": "2023-09-26T05:15:03.969Z"
+  },
+  {
+    "id": 33,
+    "Section": "cocktails",
+    "Name": "Sangria #1",
+    "Description": "Dark Rum, Vinho Verde, Manzanilla, Spiced Pear, Apple Cider, Lemon Juice",
+    "Price": "13",
+    "created_at": "2023-09-26T05:15:18.546Z",
+    "updated_at": "2024-01-30T23:29:00.460Z"
+  },
+  {
+    "id": 34,
+    "Section": "cocktails",
+    "Name": "Sangria #2",
+    "Description": "Bourbon, Pinot Noir, Elderberry, Blackberry, Cranberry, OJ, Five Spice",
+    "Price": "13",
+    "created_at": "2023-09-26T05:15:40.628Z",
+    "updated_at": "2024-01-30T23:29:53.504Z"
+  },
+  {
+    "id": 35,
+    "Section": "unaSin",
+    "Name": "DENNIS RETIRES IN VENICE",
+    "Description": "Seedlip Spice, Grapefruit, Maple, Star Anise",
+    "Price": "10",
+    "created_at": "2023-09-26T05:15:57.263Z",
+    "updated_at": "2023-09-26T05:15:57.267Z"
+  },
+  {
+    "id": 36,
+    "Section": "unaSin",
+    "Name": "Apple-Y Ever After",
+    "Description": "Seedlip Spice, Apple Cider, Agave, Lemon Juice",
+    "Price": "10",
+    "created_at": "2023-09-26T05:16:11.524Z",
+    "updated_at": "2024-01-30T23:25:42.972Z"
+  },
+  {
+    "id": 37,
+    "Section": "unaSin",
+    "Name": "Sangria Sunrise",
+    "Description": "Orange, Grapefruit, Lime, Strawberry, Bubbles",
+    "Price": "6",
+    "created_at": "2023-09-26T05:16:33.029Z",
+    "updated_at": "2023-09-26T05:16:33.032Z"
+  },
+  {
+    "id": 38,
+    "Section": "wine",
+    "Name": "CAVA",
+    "Description": "Conquilla, Brut, Spain",
+    "Price": "10/36",
+    "created_at": "2023-09-26T05:16:50.860Z",
+    "updated_at": "2023-09-26T05:16:50.863Z"
+  },
+  {
+    "id": 39,
+    "Section": "wine",
+    "Name": "CAVA",
+    "Description": "Conquilla, Brut Rose, Spain",
+    "Price": "13/42",
+    "created_at": "2023-09-26T05:17:07.762Z",
+    "updated_at": "2023-09-26T05:17:07.765Z"
+  },
+  {
+    "id": 40,
+    "Section": "wine",
+    "Name": "Vihno Verde",
+    "Description": "Quinta Da Lixa, Portugal",
+    "Price": "9/29",
+    "created_at": "2023-09-26T05:17:24.604Z",
+    "updated_at": "2023-09-26T05:17:24.606Z"
+  },
+  {
+    "id": 41,
+    "Section": "wine",
+    "Name": "Pinot Grigio",
+    "Description": "Vigneti Del Sole, Italy",
+    "Price": "10/32",
+    "created_at": "2023-09-26T05:17:39.329Z",
+    "updated_at": "2023-09-26T05:17:39.332Z"
+  },
+  {
+    "id": 42,
+    "Section": "wine",
+    "Name": "Sauvignon Blanc",
+    "Description": "Cannonball, California",
+    "Price": "11/36",
+    "created_at": "2023-09-26T05:17:53.223Z",
+    "updated_at": "2023-09-26T05:17:53.226Z"
+  },
+  {
+    "id": 43,
+    "Section": "wine",
+    "Name": "MOSCATO",
+    "Description": "Mount Hernon, Israel",
+    "Price": "12/40",
+    "created_at": "2023-09-26T05:18:06.870Z",
+    "updated_at": "2023-09-26T05:18:06.873Z"
+  },
+  {
+    "id": 44,
+    "Section": "wine",
+    "Name": "ALBARINO",
+    "Description": "Columna, Spain",
+    "Price": "12/40",
+    "created_at": "2023-09-26T05:18:22.179Z",
+    "updated_at": "2023-09-26T05:18:22.182Z"
+  },
+  {
+    "id": 45,
+    "Section": "wine",
+    "Name": "MOSCOFILERO",
+    "Description": "Domaine Skouras, Greece",
+    "Price": "13/42",
+    "created_at": "2023-09-26T05:18:38.965Z",
+    "updated_at": "2023-09-26T05:18:38.968Z"
+  },
+  {
+    "id": 46,
+    "Section": "wine",
+    "Name": "CHARDONNAY",
+    "Description": "Sean Minor, California",
+    "Price": "13/42",
+    "created_at": "2023-09-26T05:18:53.136Z",
+    "updated_at": "2023-09-26T05:18:53.138Z"
+  },
+  {
+    "id": 47,
+    "Section": "wine",
+    "Name": "PINOT NOIR ROSé",
+    "Description": "Ravines, New York",
+    "Price": "13/42",
+    "created_at": "2023-09-26T05:19:06.238Z",
+    "updated_at": "2023-09-26T05:19:06.241Z"
+  },
+  {
+    "id": 48,
+    "Section": "wine",
+    "Name": "ORANGE BLEND",
+    "Description": "Adega De Penalva, Portugal",
+    "Price": "12/40",
+    "created_at": "2023-09-26T05:19:23.406Z",
+    "updated_at": "2023-09-26T05:19:23.409Z"
+  },
+  {
+    "id": 49,
+    "Section": "wine",
+    "Name": "PINOT NOIR",
+    "Description": "Blood Root, California",
+    "Price": "11/36",
+    "created_at": "2023-09-26T05:19:38.485Z",
+    "updated_at": "2023-09-26T05:19:38.488Z"
+  },
+  {
+    "id": 50,
+    "Section": "wine",
+    "Name": "RED BLEND",
+    "Description": "Boony Doon, California",
+    "Price": "14/48",
+    "created_at": "2023-09-26T05:19:51.456Z",
+    "updated_at": "2023-09-26T05:19:51.459Z"
+  },
+  {
+    "id": 51,
+    "Section": "wine",
+    "Name": "TEMPRANILLO",
+    "Description": "Finca Torremilanos, Spain",
+    "Price": "12/40",
+    "created_at": "2023-09-26T05:20:32.675Z",
+    "updated_at": "2023-09-26T05:20:32.678Z"
+  },
+  {
+    "id": 52,
+    "Section": "domesticWine",
+    "Name": "RAVINES, DRY RIESLING, 'ARGETSINGER VINEYARD'",
+    "Description": "Finger Lakes, 2019",
+    "Price": "48",
+    "created_at": "2023-09-26T05:20:51.149Z",
+    "updated_at": "2023-09-26T05:20:51.152Z"
+  },
+  {
+    "id": 53,
+    "Section": "domesticWine",
+    "Name": "LIEU DIT, MELON",
+    "Description": "Santa Maria Valley, 2021",
+    "Price": "45",
+    "created_at": "2023-09-26T05:21:05.793Z",
+    "updated_at": "2023-09-26T05:21:05.797Z"
+  },
+  {
+    "id": 54,
+    "Section": "domesticWine",
+    "Name": "CRISTOM, CHARDONNAY",
+    "Description": "Eola-Amity Hills, 2020",
+    "Price": "65",
+    "created_at": "2023-09-26T05:21:21.428Z",
+    "updated_at": "2023-09-26T05:21:21.432Z"
+  },
+  {
+    "id": 55,
+    "Section": "domesticWine",
+    "Name": "RAMEY, CHARDONNAY",
+    "Description": "Russian River Valley, 2019",
+    "Price": "75",
+    "created_at": "2023-09-26T05:21:36.528Z",
+    "updated_at": "2023-09-26T05:21:36.531Z"
+  },
+  {
+    "id": 56,
+    "Section": "domesticWine",
+    "Name": "LIEU DIT, GAMAY",
+    "Description": "Santa Ynez Valley, 2018",
+    "Price": "55",
+    "created_at": "2023-09-26T05:22:02.249Z",
+    "updated_at": "2023-09-26T05:22:02.251Z"
+  },
+  {
+    "id": 57,
+    "Section": "domesticWine",
+    "Name": "OSMOTE, CABERNET FRANC",
+    "Description": "Finger Lakes, 2021",
+    "Price": "48",
+    "created_at": "2023-09-26T05:22:17.290Z",
+    "updated_at": "2023-09-26T05:22:17.292Z"
+  },
+  {
+    "id": 58,
+    "Section": "domesticWine",
+    "Name": "CARDANO, CABERNET SAUVIGNON",
+    "Description": "Napa Valley, 2018",
+    "Price": "65",
+    "created_at": "2023-09-26T05:22:32.105Z",
+    "updated_at": "2023-09-26T05:22:32.108Z"
+  },
+  {
+    "id": 59,
+    "Section": "importWine",
+    "Name": "HENRI BILLIOT, GRAND CRU RESERVE BRUT",
+    "Description": "Champange, MV",
+    "Price": "100",
+    "created_at": "2023-09-26T05:23:05.091Z",
+    "updated_at": "2023-09-26T05:23:05.094Z"
+  },
+  {
+    "id": 60,
+    "Section": "importWine",
+    "Name": "FOLIUM, SAUVIGNON BLANC",
+    "Description": "Marlborough, 2020",
+    "Price": "45",
+    "created_at": "2023-09-26T05:23:21.305Z",
+    "updated_at": "2023-09-26T05:23:21.308Z"
+  },
+  {
+    "id": 61,
+    "Section": "importWine",
+    "Name": "MILLE REVES, VOUVRAY",
+    "Description": "2020",
+    "Price": "40",
+    "created_at": "2023-09-26T05:23:43.669Z",
+    "updated_at": "2023-09-26T05:23:43.672Z"
+  },
+  {
+    "id": 62,
+    "Section": "importWine",
+    "Name": "LA ANTIGUA CLASSICO, RIOJA BLANCO",
+    "Description": "2021",
+    "Price": "50",
+    "created_at": "2023-09-26T05:24:26.940Z",
+    "updated_at": "2023-09-26T05:24:26.943Z"
+  },
+  {
+    "id": 63,
+    "Section": "importWine",
+    "Name": "DOMAINE ARLAUD 'RONCEVIE' BOURGOGNE",
+    "Description": "2019",
+    "Price": "65",
+    "created_at": "2023-09-26T05:24:53.364Z",
+    "updated_at": "2023-09-26T05:24:53.366Z"
+  },
+  {
+    "id": 64,
+    "Section": "importWine",
+    "Name": "LUIS SEABRA, 'XISTO ILIMATADO' DOURO",
+    "Description": "2020",
+    "Price": "55",
+    "created_at": "2023-09-26T05:25:09.229Z",
+    "updated_at": "2023-09-26T05:25:09.232Z"
+  },
+  {
+    "id": 65,
+    "Section": "importWine",
+    "Name": "BODEGAS VIZCARRA RAMOS, 'JC'",
+    "Description": "Ribera Del Duero, 2019",
+    "Price": "70",
+    "created_at": "2023-09-26T05:25:25.742Z",
+    "updated_at": "2023-09-26T05:25:25.745Z"
+  },
+  {
+    "id": 66,
+    "Section": "draftBeer",
+    "Name": "NAKED DOVE",
+    "Description": "Clarity IPA 6.2% ABV",
+    "Price": "9",
+    "created_at": "2023-09-26T05:25:49.258Z",
+    "updated_at": "2024-01-30T23:41:44.217Z"
+  },
+  {
+    "id": 67,
+    "Section": "draftBeer",
+    "Name": "Naked Dove",
+    "Description": "Porter 5.5% ABV",
+    "Price": "8",
+    "created_at": "2023-09-26T05:25:58.499Z",
+    "updated_at": "2024-01-30T23:40:56.268Z"
+  },
+  {
+    "id": 69,
+    "Section": "draftBeer",
+    "Name": "BRINDLEHAUS",
+    "Description": "West Coast IPA 5.5% ABV",
+    "Price": "9",
+    "created_at": "2023-09-26T05:26:19.361Z",
+    "updated_at": "2024-01-30T23:41:02.485Z"
+  },
+  {
+    "id": 70,
+    "Section": "cannedBeer",
+    "Name": "MORTALIS",
+    "Description": "Rotating Selection",
+    "Price": "9",
+    "created_at": "2023-09-26T05:26:37.691Z",
+    "updated_at": "2023-09-26T05:26:37.695Z"
+  },
+  {
+    "id": 71,
+    "Section": "cannedBeer",
+    "Name": "BRINDLE HAUS",
+    "Description": "Rotating Selection",
+    "Price": "8",
+    "created_at": "2023-09-26T05:26:57.081Z",
+    "updated_at": "2023-09-26T05:26:57.084Z"
+  },
+  {
+    "id": 72,
+    "Section": "cannedBeer",
+    "Name": "N/A BEER",
+    "Description": "Rotating Selection",
+    "Price": "5",
+    "created_at": "2023-09-26T05:27:13.090Z",
+    "updated_at": "2023-09-26T05:27:13.093Z"
+  },
+  {
+    "id": 73,
+    "Section": "cannedBeer",
+    "Name": "HIGH NOON",
+    "Description": "Assorted Flavors",
+    "Price": "7",
+    "created_at": "2023-09-26T05:27:33.610Z",
+    "updated_at": "2023-09-26T05:27:33.613Z"
+  },
+  {
+    "id": 74,
+    "Section": "bottledBeer",
+    "Name": "COORS LIGHT",
+    "Description": null,
+    "Price": "5",
+    "created_at": "2023-09-26T05:28:01.326Z",
+    "updated_at": "2023-09-26T05:28:01.329Z"
+  },
+  {
+    "id": 75,
+    "Section": "bottledBeer",
+    "Name": "LABATT BLUE",
+    "Description": null,
+    "Price": "5",
+    "created_at": "2023-09-26T05:28:11.934Z",
+    "updated_at": "2023-09-26T05:28:11.937Z"
+  },
+  {
+    "id": 76,
+    "Section": "bottledBeer",
+    "Name": "LABATT BLUE LIGHT",
+    "Description": null,
+    "Price": "5",
+    "created_at": "2023-09-26T05:28:25.069Z",
+    "updated_at": "2023-09-26T05:28:25.071Z"
+  },
+  {
+    "id": 77,
+    "Section": "bottledBeer",
+    "Name": "HEINEKEN",
+    "Description": null,
+    "Price": "6",
+    "created_at": "2023-09-26T05:28:33.253Z",
+    "updated_at": "2023-09-26T05:28:33.257Z"
+  },
+  {
+    "id": 78,
+    "Section": "bottledBeer",
+    "Name": "ESTRELLA DAMM",
+    "Description": null,
+    "Price": "6",
+    "created_at": "2023-09-26T05:28:41.420Z",
+    "updated_at": "2023-09-26T05:28:41.424Z"
+  },
+  {
+    "id": 79,
+    "Section": "otherBeverages",
+    "Name": "COKE PRODUCTS",
+    "Description": "Coke, Diet Coke, Sprite, Ginger Ale",
+    "Price": "2",
+    "created_at": "2023-09-26T05:28:54.324Z",
+    "updated_at": "2023-09-26T05:28:54.328Z"
+  },
+  {
+    "id": 80,
+    "Section": "otherBeverages",
+    "Name": "GALAVANIA",
+    "Description": "Blood Orange Soda, Pomegranate Soda",
+    "Price": "4",
+    "created_at": "2023-09-26T05:29:05.923Z",
+    "updated_at": "2023-09-26T05:29:05.926Z"
+  },
+  {
+    "id": 81,
+    "Section": "otherBeverages",
+    "Name": "HARNEY'S",
+    "Description": "Black Iced Tea, Currant Tea",
+    "Price": "4",
+    "created_at": "2023-09-26T05:29:18.978Z",
+    "updated_at": "2023-09-26T05:29:18.980Z"
+  },
+  {
+    "id": 82,
+    "Section": "otherBeverages",
+    "Name": "HANKS'S GRAPE SODA",
+    "Description": null,
+    "Price": "4",
+    "created_at": "2023-09-26T05:29:28.371Z",
+    "updated_at": "2023-09-26T05:29:28.375Z"
+  },
+  {
+    "id": 83,
+    "Section": "otherBeverages",
+    "Name": "JONE'S ROOT BEER",
+    "Description": null,
+    "Price": "4",
+    "created_at": "2023-09-26T05:29:42.527Z",
+    "updated_at": "2023-09-26T05:29:42.530Z"
+  },
+  {
+    "id": 84,
+    "Section": "otherBeverages",
+    "Name": "SARATOGA SPARKLING WATER",
+    "Description": null,
+    "Price": "3",
+    "created_at": "2023-09-26T05:29:51.702Z",
+    "updated_at": "2023-09-26T05:29:51.705Z"
+  },
+  {
+    "id": 85,
+    "Section": "otherBeverages",
+    "Name": "FIJI STILL WATER",
+    "Description": null,
+    "Price": "3",
+    "created_at": "2023-09-26T05:30:02.222Z",
+    "updated_at": "2023-09-26T05:30:02.224Z"
+  },
+  {
+    "id": 86,
+    "Section": "otherBeverages",
+    "Name": "HOT TEA & COFFEE",
+    "Description": "Ask Your Server About Our Current Selection",
+    "Price": "~",
+    "created_at": "2023-09-26T05:30:16.946Z",
+    "updated_at": "2023-09-26T05:30:16.950Z"
+  },
+  {
+    "id": 87,
+    "Section": "draftBeer",
+    "Name": "OTHER HALF",
+    "Description": "Leaf Creepers, Double IPA 8% ABV",
+    "Price": "10",
+    "created_at": "2023-09-27T22:37:48.230Z",
+    "updated_at": "2024-01-30T23:41:07.738Z"
+  },
+  {
+    "id": 88,
+    "Section": "draftBeer",
+    "Name": "CIDER CREEK",
+    "Description": "Cran-Mango Session 6.9% ABV",
+    "Price": "8",
+    "created_at": "2023-09-27T22:38:33.142Z",
+    "updated_at": "2024-01-30T23:41:24.751Z"
+  },
+  {
+    "id": 91,
+    "Section": "tapas",
+    "Name": "Corn & Queso Dip",
+    "Description": "Local Sweet Corn, Mascarpone, Green Onion, 3-Cheese Blend ",
+    "Price": "9",
+    "created_at": "2023-11-09T16:45:56.171Z",
+    "updated_at": "2023-11-09T16:45:56.175Z"
+  },
+  {
+    "id": 92,
+    "Section": "soupandsalad",
+    "Name": "House Salad",
+    "Description": "Mixed Mediterranean Salad Greens, Radishes, Tomatoes, Cucumbers, Sherry Vinaigrette",
+    "Price": "7",
+    "created_at": "2024-01-30T22:20:30.723Z",
+    "updated_at": "2024-01-30T22:20:30.726Z"
+  },
+  {
+    "id": 93,
+    "Section": "lightfare",
+    "Name": "Caesar Salad",
+    "Description": "Romaine Lettuce, Marcona Almonds, Focaccia Croutons, Manchego, Crispy Serrano Ham, Caesar Dressing",
+    "Price": "13",
+    "created_at": "2024-01-30T22:27:50.343Z",
+    "updated_at": "2024-04-14T22:46:32.976Z"
+  },
+  {
+    "id": 104,
+    "Section": "specials",
+    "Name": "Prosciutto Melt",
+    "Description": "Thinly Sliced Prosciutto; Fresh Mozzarella; Sliced Tomatoes; Fresh Basil on House-Made Rosemary Focaccia\nServed with Chips or Side Salad",
+    "Price": "16",
+    "created_at": "2024-03-25T01:35:43.900Z",
+    "updated_at": "2024-04-10T13:30:47.227Z"
+  },
+  {
+    "id": 105,
+    "Section": "specials",
+    "Name": "Soup of The Day",
+    "Description": "Pork & Beef Chili topped with Creme Fraiche; Cheddar & Chives",
+    "Price": "12",
+    "created_at": "2024-03-25T01:36:20.659Z",
+    "updated_at": "2024-04-10T13:30:07.084Z"
+  },
+  {
+    "id": 108,
+    "Section": "specials",
+    "Name": "Penne Bolognese",
+    "Description": "Slow Simmered Tomato Sauce with Short Ribs, Chicken, Ground Chuck & Pancetta topped with Ricotta & Pecorino Romano",
+    "Price": "24",
+    "created_at": "2024-03-29T14:58:23.551Z",
+    "updated_at": "2024-04-15T02:42:49.587Z"
+  },
+  {
+    "id": 109,
+    "Section": "specials",
+    "Name": "Seasonal Focaccia",
+    "Description": "Stracciatella; Smoked Salmon; Pistachio; Arugula; Lemon On House-Made Sourdough Focaccia",
+    "Price": "18",
+    "created_at": "2024-04-15T02:43:16.048Z",
+    "updated_at": "2024-04-15T02:43:16.051Z"
+  }
+]
+ 
