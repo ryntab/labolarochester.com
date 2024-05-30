@@ -9,11 +9,11 @@ export default function Item({ name, price, desc, items }) {
             <p className="mb-4 mt-2 italic text-sm"> {desc} </p>
 
             {items && items.length > 0 && (
-                <ul className="list-none">
+                <ul className="list-none mb-6">
                     {items.map(item => (
                         <li key={item.id} className="mb-2 flex flex-row justify-between">
                             <h2 className="font-semibold uppercase text-xs"> {item.Name}</h2>
-                            <b className="ml-2 font-bold lowercase text-sm"> {item.Price ? '$' + item.Price : ''} </b>
+                            <b className="ml-2 font-bold lowercase text-xs"> {item.Price ? '$' + item.Price : ''} </b>
                         </li>
                     ))}
                 </ul>
