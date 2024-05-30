@@ -36,13 +36,33 @@
     "updated_at": "2023-09-26T04:59:51.067Z"
   },
   {
-    "id": 7,
+    "id": 6,
     "Section": "tapas",
-    "Name": "IMPORTED CONSERVAS",
-    "Description": "Wild Cockles in Salt Brine, Octopus In Olive Oil, Razor Clams In Salt Brine, Scallops in Olive Oil and Tomato Sauce",
-    "Price": "17/30",
-    "created_at": "2023-09-26T05:00:31.986Z",
-    "updated_at": "2023-09-26T05:00:31.989Z"
+    "Name": "CONSERVAS",
+    "Items": [
+      {
+        "id": 7,
+        "Name": "Wild Cockles in Salt Brine",
+        "Price": "17"
+      },
+      {
+        "id": 8,
+        "Name": "Octopus In Olive Oil",
+        "Price": "30"
+      },
+      {
+        "id": 9,
+        "Name": "Razor Clams In Salt Brine",
+        "Price": "17"
+      },
+      {
+        "id": 10,
+        "Name": "Scallops in Olive Oil and Tomato Sauce",
+        "Price": "30"
+      }
+    ],
+    "created_at": "2023-09-26T04:59:51.065Z",
+    "updated_at": "2023-09-26T04:59:51.067Z"
   },
   {
     "id": 9,
@@ -56,8 +76,26 @@
   {
     "id": 10,
     "Section": "tapas",
-    "Name": "Pear & Fig Focaccia",
-    "Description": "Onion Jam, Gorgonzola, Goat Cheese, Brie, Manchego, Black Pepper Honey, Candied Walnuts",
+    "Name": "Seasonal Focaccia",
+    "Description": "Smoked Salmon, Stracciatella, Pistachio, Lemon, Arugla",
+    "Price": "18",
+    "created_at": "2023-09-26T05:01:26.400Z",
+    "updated_at": "2024-01-30T21:51:58.789Z"
+  },
+  {
+    "id": 10,
+    "Section": "tapas",
+    "Name": "Fried Artichokes",
+    "Description": "Parmesan Crusted, Lemon Aioli",
+    "Price": "12",
+    "created_at": "2023-09-26T05:01:26.400Z",
+    "updated_at": "2024-01-30T21:51:58.789Z"
+  },
+  {
+    "id": 10,
+    "Section": "tapas",
+    "Name": "Corn & Queso Dip",
+    "Description": "Local Sweet Corn, Mascarpone, Green Onion, 3-Cheese Blend, Served with Flatbread",
     "Price": "12",
     "created_at": "2023-09-26T05:01:26.400Z",
     "updated_at": "2024-01-30T21:51:58.789Z"
@@ -119,9 +157,9 @@
   {
     "id": 19,
     "Section": "entrees",
-    "Name": "Arroz Con Pollo",
-    "Description": "Half-Roasted Chicken, Saffron Rice, Preserved Lemon",
-    "Price": "19",
+    "Name": "Grilled Chicken",
+    "Description": "Grilled Bone-In Chicken, Garlic Confit, Lemon Oregano Potatoes, Mediterranean Salad",
+    "Price": "20",
     "created_at": "2023-09-26T05:07:34.551Z",
     "updated_at": "2024-01-30T22:40:16.442Z"
   },
@@ -129,16 +167,16 @@
     "id": 20,
     "Section": "entrees",
     "Name": "LAMB MEATBALLS",
-    "Description": "Spiced Yogurt, Salsa Bravas, House-Made Pita",
-    "Price": "18",
+    "Description": "Spiced Yogurt, Salsa Bravas, Served with Flatbread",
+    "Price": "19",
     "created_at": "2023-09-26T05:07:58.818Z",
     "updated_at": "2023-09-26T05:09:19.103Z"
   },
   {
     "id": 21,
     "Section": "entrees",
-    "Name": "Crab RISOTTO",
-    "Description": "Grilled Shrimp, Paella Rice, Saffron Aioli, Lump Crab",
+    "Name": "Spring Risotto",
+    "Description": "Grilled Shrimp, Ventetian Rice, English Peas, Fresh Fava Beans, Salsa Verde",
     "Price": "23",
     "created_at": "2023-09-26T05:09:58.959Z",
     "updated_at": "2024-01-30T22:40:56.789Z"
@@ -147,7 +185,16 @@
     "id": 22,
     "Section": "entrees",
     "Name": "PASTA",
-    "Description": "Fusilli, Sobrasada Sausage Ragú, Pecorino Romano, Scallion Oil, Burrata",
+    "Description": "Gemelli Pasta, Pistachio Cream, Burrata",
+    "Price": "17",
+    "created_at": "2023-09-26T05:10:18.380Z",
+    "updated_at": "2024-01-30T22:41:45.913Z"
+  },
+  {
+    "id": 22,
+    "Section": "entrees",
+    "Name": "Roasted Cauliflower",
+    "Description": "RHlaf roasted Cauliflower, Hazelnut Romesco, Beluga Lentis, Chimichurri Sauce", 
     "Price": "17",
     "created_at": "2023-09-26T05:10:18.380Z",
     "updated_at": "2024-01-30T22:41:45.913Z"
