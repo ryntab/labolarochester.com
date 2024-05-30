@@ -42,9 +42,9 @@ export default function Menu(pageProps) {
             case "menu":
                 return (
                     <>
-                        <Section title="Tapas" sectionItems={menu} tabName="tapas"/>
+                        <Section title="Tapas & Dips" sectionItems={menu} tabName="tapas"/>
                         <Section title="Sandwiches" sectionItems={menu} tabName="sandwiches"/>
-                        <Section title="Soups and Salads" sectionItems={menu} tabName="soupandsalad"/>
+                        <Section title="Light Fare" sectionItems={menu} tabName="soupandsalad"/>
 			            <Section title="Entrees" sectionItems={menu} tabName="entrees"/>
                     </>
                 )

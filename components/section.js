@@ -13,6 +13,7 @@ export default function Section(pageProps) {
             name={sectionItem.Name}
             price={sectionItem.Price}
             desc={sectionItem.Description}
+            items={sectionItem.Items}
           />
       ))}
     </div>
